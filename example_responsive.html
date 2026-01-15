@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Responsive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 1rem;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 2rem 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 5px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Logo</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <h1>Título Principal</h1>
+        <p>Texto de exemplo para demostrar unha páxina web responsive.</p>
+        
+        <div class="content-grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Imaxe de exemplo">
+                <h2>Sección 1</h2>
+                <p>Contido da primeira sección.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Imaxe de exemplo">
+                <h2>Sección 2</h2>
+                <p>Contido da segunda sección.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Imaxe de exemplo">
+                <h2>Sección 3</h2>
+                <p>Contido da terceira sección.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

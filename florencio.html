@@ -19,7 +19,7 @@
       overflow-x: hidden;
     }
 
-    section {
+    .page-container {
       min-height: 100vh;
       width: 100%;
       display: flex;
@@ -28,10 +28,18 @@
       align-items: center;
       padding: 2rem 1.5rem;
       text-align: center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
       position: relative;
+      background-color: white;
+    }
+
+    .image-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
     }
 
     /* Estilos para títulos e texto */
@@ -40,6 +48,10 @@
       font-weight: bold;
       color: #361f05;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 1rem;
     }
 
     .ft-name {
@@ -57,6 +69,9 @@
       line-height: 1.6;
       max-width: 900px;
       margin: 1rem auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 15px;
+      border-radius: 5px;
     }
 
     .ft-normal {
@@ -64,11 +79,17 @@
       color: #000;
       max-width: 900px;
       margin: 1rem auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 15px;
+      border-radius: 5px;
     }
 
     .ft-emphasis {
       color: #361f05;
       font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 10px;
+      border-radius: 5px;
     }
 
     .ft-italic {
@@ -88,34 +109,63 @@
       font-weight: bold;
     }
 
+    .poem-line {
+      margin-bottom: 0.6em;
+    }
+
     /* Media queries para móbiles */
     @media (max-width: 768px) {
-      section {
+      .page-container {
         padding: 1.5rem 1rem;
       }
+      
       .ft-name {
         font-size: clamp(2rem, 14vw, 5rem);
       }
+      
+      .ft-title, .ft-poem, .ft-normal, .ft-emphasis {
+        font-size: clamp(0.9rem, 4vw, 1.4rem);
+        padding: 10px;
+      }
+      
+      .image-background {
+        display: none;
+      }
+      
+      .page-container {
+        background-size: cover;
+        background-position: center;
+      }
     }
 
-    /* Espazado adicional en poemas */
-    .poem-line {
-      margin-bottom: 0.6em;
+    /* Para pantallas pequenas */
+    @media (max-width: 480px) {
+      .page-container {
+        padding: 1rem 0.5rem;
+      }
+      
+      .ft-title, .ft-poem, .ft-normal, .ft-emphasis {
+        font-size: clamp(0.8rem, 5vw, 1.2rem);
+        padding: 8px;
+      }
     }
   </style>
 </head>
 <body>
 
 <!-- Páxina 1 -->
-<section style="background-image: url('florencio001.png');">
-
-</section>
+<div class="page-container">
+  <img src="florencio001.png" alt="Portada" class="image-background">
+</div>
 
 <!-- Páxina 2 (só imaxe) -->
-<section style="background-image: url('florencio002.png');"></section>
+<div class="page-container">
+  <img src="florencio002.png" alt="Páxina 2" class="image-background">
+</div>
 
 <!-- Páxina 3 -->
-<section style="background-image: url('florencio003.png');">
+<div class="page-container">
+  <img src="florencio003.png" alt="Páxina 3" class="image-background">
   <p class="ft-normal">
     O&nbsp;&nbsp;19&nbsp;&nbsp;de&nbsp;&nbsp;outubro&nbsp;&nbsp;de&nbsp;&nbsp;2025&nbsp;&nbsp;cumpríronse&nbsp;&nbsp;cen&nbsp;&nbsp;anos&nbsp;&nbsp;do<br/>
     falecemento&nbsp;&nbsp;de&nbsp;&nbsp;Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;e&nbsp;&nbsp;canto&nbsp;&nbsp;máis&nbsp;&nbsp;nos<br/>
@@ -131,15 +181,17 @@
     ligazón&nbsp;con&nbsp;Bergondo,&nbsp;e&nbsp;máis&nbsp;concretamente&nbsp;coa&nbsp;parroquia&nbsp;de<br/>
     Ouces,&nbsp;onde&nbsp;naceu.
   </p>
-</section>
+</div>
 
 <!-- Páxina 4 -->
-<section style="background-image: url('florencio004.png');">
+<div class="page-container">
+  <img src="florencio004.png" alt="Páxina 4" class="image-background">
   <p class="ft-title ft-bold">Bergondo:&nbsp;xoia&nbsp;das&nbsp;Mariñas&nbsp;e&nbsp;lugar&nbsp;de&nbsp;nacemento&nbsp;de&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores</p>
-</section>
+</div>
 
 <!-- Páxina 5 -->
-<section style="background-image: url('florencio005.png');">
+<div class="page-container">
+  <img src="florencio005.png" alt="Páxina 5" class="image-background">
   <p class="ft-normal">
     Bergondo&nbsp;é&nbsp;o&nbsp;lugar&nbsp;de&nbsp;nacemento&nbsp;de&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores<br/>
     e&nbsp;&nbsp;está&nbsp;&nbsp;localizado&nbsp;&nbsp;na&nbsp;&nbsp;marxe&nbsp;&nbsp;occidental&nbsp;&nbsp;da&nbsp;&nbsp;ría&nbsp;&nbsp;de&nbsp;&nbsp;Betanzos,&nbsp;&nbsp;no<br/>
@@ -156,13 +208,17 @@
     dentro&nbsp;&nbsp;da&nbsp;&nbsp;Reserva&nbsp;&nbsp;da&nbsp;&nbsp;Biosfera&nbsp;&nbsp;das&nbsp;&nbsp;Mariñas&nbsp;&nbsp;Coruñesas&nbsp;&nbsp;e&nbsp;&nbsp;Terras<br/>
     do&nbsp;Mandeo.
   </p>
-</section>
+</div>
 
 <!-- Páxina 6 -->
-<section style="background-image: url('florencio006.png');"></section>
+<div class="page-container">
+  <img src="florencio006.png" alt="Páxina 6" class="image-background">
+</div>
 
 <!-- Páxina 7 -->
-<section style="background-image: url('florencio007.png');">
+
+<div class="page-container">
+  <img src('florencio007.png');">
   <p class="ft-normal">
     Dentro&nbsp;&nbsp;do&nbsp;&nbsp;Concello&nbsp;&nbsp;de&nbsp;&nbsp;Bergondo&nbsp;&nbsp;destacan&nbsp;&nbsp;moitos<br/>
     lugares&nbsp;de&nbsp;interese&nbsp;natural&nbsp;como&nbsp;son&nbsp;as&nbsp;marismas&nbsp;ou&nbsp;as&nbsp;&nbsp;<br/>
@@ -178,10 +234,15 @@
 </section>
 
 <!-- Páxina 8 -->
-<section style="background-image: url('florencio008.png');"></section>
+
+<div class="page-container">
+  <img src('florencio008.png');" alt="Páxina" class="image-background">
+</div>
 
 <!-- Páxina 9 -->
-<section style="background-image: url('florencio009.png');">
+
+<div class="page-container">
+  <img src('florencio009.png');">
   <p class="ft-normal">
     Bergondo&nbsp;&nbsp;ten&nbsp;&nbsp;nove&nbsp;&nbsp;parroquias,&nbsp;&nbsp;setenta&nbsp;&nbsp;e&nbsp;&nbsp;dúas&nbsp;&nbsp;entidades&nbsp;&nbsp;ou<br/>
     lugares,&nbsp;e&nbsp;a&nbsp;densidade&nbsp;de&nbsp;poboación&nbsp;é&nbsp;de&nbsp;190&nbsp;habitantes&nbsp;por<br/>
@@ -201,12 +262,16 @@
 </section>
 
 <!-- Páxina 10 -->
-<section style="background-image: url('florencio010.png');">
+
+<div class="page-container">
+  <img src('florencio010.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 4.5rem);">Ouces&nbsp;e&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores</p>
 </section>
 
 <!-- Páxina 11 -->
-<section style="background-image: url('florencio011.png');">
+
+<div class="page-container">
+  <img src('florencio011.png');">
   <p class="ft-normal">Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;naceu&nbsp;&nbsp;na</p>
   <p class="ft-normal">parroquia&nbsp;&nbsp;bergondesa&nbsp;&nbsp;de&nbsp;&nbsp;Ouces&nbsp;&nbsp;o&nbsp;&nbsp;2&nbsp;&nbsp;de</p>
   <p class="ft-normal">abril&nbsp;&nbsp;de&nbsp;&nbsp;1860&nbsp;&nbsp;no&nbsp;&nbsp;seo&nbsp;&nbsp;dunha&nbsp;&nbsp;familia</p>
@@ -220,7 +285,9 @@
 </section>
 
 <!-- Páxina 12 -->
-<section style="background-image: url('florencio012.png');">
+
+<div class="page-container">
+  <img src('florencio012.png');">
   <p class="ft-emphasis">A&nbsp;súa&nbsp;nai&nbsp;era&nbsp;Brígida&nbsp;Lores&nbsp;Batell,</p>
   <p class="ft-emphasis">da&nbsp;&nbsp;que&nbsp;&nbsp;se&nbsp;&nbsp;conservan&nbsp;&nbsp;estes&nbsp;&nbsp;dous</p>
   <p class="ft-emphasis">retratos.</p>
@@ -231,12 +298,16 @@
 </section>
 
 <!-- Páxina 13 -->
-<section style="background-image: url('florencio013.png');">
+
+<div class="page-container">
+  <img src('florencio013.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.2rem, 9vw, 5rem);">A&nbsp;casa&nbsp;familiar</p>
 </section>
 
 <!-- Páxina 14 -->
-<section style="background-image: url('florencio014.png');">
+
+<div class="page-container">
+  <img src('florencio014.png');">
   <p class="ft-normal">
     Esta&nbsp;é&nbsp;a&nbsp;casa&nbsp;familiar&nbsp;da&nbsp;familia&nbsp;Vaamonde&nbsp;Lores.&nbsp;Sitúase&nbsp;no<br/>
     lugar&nbsp;&nbsp;do&nbsp;&nbsp;Outeiro&nbsp;&nbsp;número&nbsp;&nbsp;5&nbsp;&nbsp;aínda&nbsp;&nbsp;que&nbsp;&nbsp;antigamente&nbsp;&nbsp;tiña&nbsp;&nbsp;o<br/>
@@ -250,7 +321,9 @@
 </section>
 
 <!-- Páxina 15 -->
-<section style="background-image: url('florencio015.png');">
+
+<div class="page-container">
+  <img src('florencio015.png');">
   <p class="ft-normal">César&nbsp;Vaamonde&nbsp;describiu&nbsp;así&nbsp;a&nbsp;propiedade:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
   <p class="ft-italic ft-normal">
     La&nbsp;casa&nbsp;es&nbsp;la&nbsp;señalada&nbsp;actualmente&nbsp;con&nbsp;el&nbsp;número&nbsp;3&nbsp;y&nbsp;pertenece&nbsp;a&nbsp;la&nbsp;parroquia&nbsp;de<br/>
@@ -269,12 +342,16 @@
 </section>
 
 <!-- Páxina 16 -->
-<section style="background-image: url('florencio016.png');">
+
+<div class="page-container">
+  <img src('florencio016.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 4rem);">Infancia&nbsp;de&nbsp;<br/>Florencio&nbsp;<br/>Vaamonde&nbsp;Lores</p>
 </section>
 
 <!-- Páxina 17 -->
-<section style="background-image: url('florencio017.png');">
+
+<div class="page-container">
+  <img src('florencio017.png');">
   <p class="ft-emphasis">
     Desde&nbsp;o&nbsp;seu&nbsp;nacemento&nbsp;o&nbsp;dous&nbsp;de&nbsp;abril&nbsp;de&nbsp;1860&nbsp;ata&nbsp;que&nbsp;tiña<br/>
     18&nbsp;&nbsp;anos,&nbsp;&nbsp;Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;viviu&nbsp;&nbsp;nesta&nbsp;&nbsp;casa&nbsp;&nbsp;do<br/>
@@ -292,7 +369,9 @@
 </section>
 
 <!-- Páxina 18 -->
-<section style="background-image: url('florencio018.png');">
+
+<div class="page-container">
+  <img src('florencio018.png');">
   <div class="ft-poem">
     <div class="poem-line">Outeiro,&nbsp;meu&nbsp;Outeiro,&nbsp;berce&nbsp;amado,</div>
     <div class="poem-line">encantadora&nbsp;aldea,&nbsp;</div>
@@ -336,7 +415,9 @@
 </section>
 
 <!-- Páxina 19 -->
-<section style="background-image: url('florencio019.png');">
+
+<div class="page-container">
+  <img src('florencio019.png');">
   <p class="ft-emphasis">
     Nestes&nbsp;&nbsp;anos&nbsp;&nbsp;de&nbsp;&nbsp;infancia&nbsp;&nbsp;e&nbsp;&nbsp;mocidade&nbsp;&nbsp;vividos&nbsp;&nbsp;no&nbsp;&nbsp;lugar&nbsp;&nbsp;do<br/>
     Outeiro&nbsp;foi&nbsp;moi&nbsp;estreita&nbsp;a&nbsp;relación&nbsp;cos&nbsp;tíos&nbsp;paternos:&nbsp;José<br/>
@@ -346,7 +427,9 @@
 </section>
 
 <!-- Páxina 20 -->
-<section style="background-image: url('florencio020.png');">
+
+<div class="page-container">
+  <img src('florencio020.png');">
   <p class="ft-emphasis">
     Os&nbsp;&nbsp;tíos&nbsp;&nbsp;vivían&nbsp;&nbsp;enfronte&nbsp;&nbsp;da&nbsp;&nbsp;casa&nbsp;&nbsp;familiar,&nbsp;&nbsp;neste&nbsp;&nbsp;lugar&nbsp;&nbsp;onde&nbsp;&nbsp;hoxe&nbsp;&nbsp;en&nbsp;&nbsp;día&nbsp;&nbsp;se<br/>
     asenta&nbsp;&nbsp;unha&nbsp;&nbsp;nova&nbsp;&nbsp;construción.&nbsp;&nbsp;O&nbsp;&nbsp;terreo&nbsp;&nbsp;pertencía&nbsp;&nbsp;á&nbsp;&nbsp;familia&nbsp;&nbsp;desde&nbsp;&nbsp;tempos<br/>
@@ -357,7 +440,9 @@
 </section>
 
 <!-- Páxina 21 -->
-<section style="background-image: url('florencio021.png');">
+
+<div class="page-container">
+  <img src('florencio021.png');">
   <p class="ft-emphasis">
     Tamén&nbsp;tiñan&nbsp;moito&nbsp;trato&nbsp;con&nbsp;Dolores<br/>
     Vaamonde&nbsp;Malvido,&nbsp;a&nbsp;tía&nbsp;paterna.
@@ -365,7 +450,9 @@
 </section>
 
 <!-- Páxina 22 -->
-<section style="background-image: url('florencio022.png');">
+
+<div class="page-container">
+  <img src('florencio022.png');">
   <p class="ft-emphasis">
     Imos&nbsp;&nbsp;describir&nbsp;&nbsp;algúns&nbsp;&nbsp;dos&nbsp;&nbsp;lugares&nbsp;&nbsp;de&nbsp;&nbsp;Ouces&nbsp;&nbsp;que<br/>
     foron&nbsp;&nbsp;importantes&nbsp;&nbsp;para&nbsp;&nbsp;Florencio&nbsp;&nbsp;e&nbsp;&nbsp;que&nbsp;&nbsp;aparecen<br/>
@@ -374,12 +461,16 @@
 </section>
 
 <!-- Páxina 23 -->
-<section style="background-image: url('florencio023.png');">
+
+<div class="page-container">
+  <img src('florencio023.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.5rem, 10vw, 5rem);">Fonte&nbsp;do&nbsp;Picho</p>
 </section>
 
 <!-- Páxina 24 -->
-<section style="background-image: url('florencio024.png');">
+
+<div class="page-container">
+  <img src('florencio024.png');">
   <p class="ft-normal">
     Na&nbsp;parte&nbsp;baixa&nbsp;da&nbsp;casa&nbsp;familiar&nbsp;está&nbsp;a&nbsp;fonte&nbsp;do&nbsp;Picho.&nbsp;César,&nbsp;un&nbsp;dos<br/>
     irmáns&nbsp;de&nbsp;Florencio,&nbsp;deixou&nbsp;escritos&nbsp;uns&nbsp;datos&nbsp;interesantes:
@@ -397,12 +488,16 @@
 </section>
 
 <!-- Páxina 25 -->
-<section style="background-image: url('florencio025.png');">
+
+<div class="page-container">
+  <img src('florencio025.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 4rem);">Antiga&nbsp;escola</p>
 </section>
 
 <!-- Páxina 26 -->
-<section style="background-image: url('florencio026.png');">
+
+<div class="page-container">
+  <img src('florencio026.png');">
   <p class="ft-normal">
     Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;cursou&nbsp;&nbsp;os&nbsp;&nbsp;seus&nbsp;&nbsp;primeiros&nbsp;&nbsp;estudos&nbsp;&nbsp;na&nbsp;&nbsp;escola&nbsp;&nbsp;do<br/>
     Outeiro,&nbsp;&nbsp;onde&nbsp;&nbsp;sitúa&nbsp;&nbsp;algúns&nbsp;&nbsp;dos&nbsp;&nbsp;personaxes&nbsp;&nbsp;da&nbsp;&nbsp;súa&nbsp;&nbsp;novela&nbsp;<i class="ft-italic">Anxélica</i><br/>
@@ -431,7 +526,9 @@
 <!-- Continuar co resto das seccións... -->
 
 <!-- Páxina 27 -->
-<section style="background-image: url('florencio027.png');">
+
+<div class="page-container">
+  <img src('florencio027.png');">
   <p class="ft-normal">
     César&nbsp;Vaamonde,&nbsp;que&nbsp;se&nbsp;encargou&nbsp;de&nbsp;poñer&nbsp;unha&nbsp;notas&nbsp;á&nbsp;novela<br/>
     que&nbsp;seu&nbsp;irmán&nbsp;deixou&nbsp;inédita,&nbsp;indicaba&nbsp;ao&nbsp;respecto:
@@ -450,12 +547,16 @@
 </section>
 
 <!-- Páxina 28 -->
-<section style="background-image: url('florencio028.png');">
+
+<div class="page-container">
+  <img src('florencio028.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.5rem, 10vw, 5rem);">Fonte&nbsp;da&nbsp;Curuxa</p>
 </section>
 
 <!-- Páxina 29 -->
-<section style="background-image: url('florencio029.png');">
+
+<div class="page-container">
+  <img src('florencio029.png');">
   <p class="ft-normal">
     Na&nbsp;fonte&nbsp;da&nbsp;Curuxa&nbsp;a&nbsp;familia&nbsp;Vaamonde&nbsp;&nbsp;debeu&nbsp;pasar<br/>
     moitos&nbsp;&nbsp;e&nbsp;&nbsp;bos&nbsp;&nbsp;momentos.&nbsp;&nbsp;Está&nbsp;&nbsp;situada&nbsp;&nbsp;debaixo&nbsp;&nbsp;das<br/>
@@ -465,7 +566,9 @@
 </section>
 
 <!-- Páxina 30 -->
-<section style="background-image: url('florencio030.png');">
+
+<div class="page-container">
+  <img src('florencio030.png');">
   <div class="ft-poem">
     <div class="poem-line">De&nbsp;Ouces&nbsp;bellos&nbsp;xardíns&nbsp;que&nbsp;relembrando</div>
     <div class="poem-line">estou&nbsp;a&nbsp;todas&nbsp;horas&nbsp;cariñoso;</div>
@@ -496,12 +599,16 @@
 </section>
 
 <!-- Páxina 31 -->
-<section style="background-image: url('florencio031.png');">
+
+<div class="page-container">
+  <img src('florencio031.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 4rem);">Vida&nbsp;adulta&nbsp;de&nbsp;<br/>Florencio&nbsp;<br/>Vaamonde&nbsp;Lores</p>
 </section>
 
 <!-- Páxina 32 -->
-<section style="background-image: url('florencio032.png');">
+
+<div class="page-container">
+  <img src('florencio032.png');">
   <p class="ft-normal">
     Cando&nbsp;&nbsp;Florencio&nbsp;&nbsp;tiña&nbsp;&nbsp;18&nbsp;&nbsp;anos,&nbsp;&nbsp;en&nbsp;&nbsp;1878,&nbsp;&nbsp;a&nbsp;&nbsp;familia&nbsp;&nbsp;marcha<br/>
     vivir&nbsp;á&nbsp;Coruña.&nbsp;
@@ -517,7 +624,9 @@
 </section>
 
 <!-- Páxina 33 -->
-<section style="background-image: url('florencio033.png');">
+
+<div class="page-container">
+  <img src('florencio033.png');">
   <p class="ft-normal">
     Esta&nbsp;&nbsp;fotografía&nbsp;&nbsp;é&nbsp;&nbsp;do&nbsp;&nbsp;ano&nbsp;&nbsp;1879&nbsp;&nbsp;e&nbsp;&nbsp;nela<br/>
     podemos&nbsp;&nbsp;ver&nbsp;&nbsp;os&nbsp;&nbsp;irmáns&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores<br/>
@@ -535,7 +644,9 @@
 </section>
 
 <!-- Páxina 34 -->
-<section style="background-image: url('florencio034.png');">
+
+<div class="page-container">
+  <img src('florencio034.png');">
   <p class="ft-normal">
     Florencio&nbsp;&nbsp;volveu&nbsp;&nbsp;a&nbsp;&nbsp;Ouces&nbsp;&nbsp;nas&nbsp;&nbsp;fins&nbsp;&nbsp;de&nbsp;&nbsp;semana&nbsp;&nbsp;e&nbsp;&nbsp;nos<br/>
     períodos&nbsp;&nbsp;de&nbsp;&nbsp;vacacións,&nbsp;&nbsp;pero&nbsp;&nbsp;non&nbsp;&nbsp;regresou&nbsp;&nbsp;á&nbsp;&nbsp;casa&nbsp;&nbsp;onde<br/>
@@ -545,12 +656,16 @@
 </section>
 
 <!-- Páxina 35 -->
-<section style="background-image: url('florencio035.png');">
+
+<div class="page-container">
+  <img src('florencio035.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.5rem, 10vw, 5rem);">A CASA DO RÍO</p>
 </section>
 
 <!-- Páxina 36 -->
-<section style="background-image: url('florencio036.png');">
+
+<div class="page-container">
+  <img src('florencio036.png');">
   <p class="ft-emphasis">
     Florencio&nbsp;podía&nbsp;contemplar&nbsp;desde&nbsp;aquí&nbsp;o&nbsp;cume&nbsp;de&nbsp;dous&nbsp;grandes<br/>
     castros:&nbsp;&nbsp;o&nbsp;&nbsp;de&nbsp;&nbsp;Bergondo&nbsp;&nbsp;e&nbsp;&nbsp;o&nbsp;&nbsp;de&nbsp;&nbsp;Reboredo,&nbsp;&nbsp;e&nbsp;&nbsp;a&nbsp;&nbsp;estas&nbsp;&nbsp;antigas<br/>
@@ -560,12 +675,16 @@
 </section>
 
 <!-- Páxina 37 -->
-<section style="background-image: url('florencio037.png');">
+
+<div class="page-container">
+  <img src('florencio037.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.8rem, 11vw, 6rem);">OS CASTROS</p>
 </section>
 
 <!-- Páxina 38 -->
-<section style="background-image: url('florencio038.png');">
+
+<div class="page-container">
+  <img src('florencio038.png');">
   <div class="ft-poem" style="font-size: clamp(0.9rem, 3vw, 1.4rem);">
     <div class="poem-line">Vello&nbsp;castro,&nbsp;vello&nbsp;castro,</div>
     <div class="poem-line">que&nbsp;hoxe&nbsp;despoboado&nbsp;estás</div>
@@ -624,12 +743,16 @@
 </section>
 
 <!-- Páxina 39 -->
-<section style="background-image: url('florencio039.png');">
+
+<div class="page-container">
+  <img src('florencio039.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.5rem, 10vw, 5rem);">O Roibal</p>
 </section>
 
 <!-- Páxina 40 -->
-<section style="background-image: url('florencio040.png');">
+
+<div class="page-container">
+  <img src('florencio040.png');">
   <p class="ft-emphasis">
     A&nbsp;Florencio&nbsp;tamén&nbsp;lle&nbsp;gustaba&nbsp;camiñar&nbsp;pola&nbsp;zona&nbsp;cercana&nbsp;á<br/>
     Casa&nbsp;do&nbsp;Río,&nbsp;coñecida&nbsp;como&nbsp;O&nbsp;Roibal.&nbsp;Ás&nbsp;veces&nbsp;paseaba&nbsp;só<br/>
@@ -645,7 +768,9 @@
 </section>
 
 <!-- Páxina 41 -->
-<section style="background-image: url('florencio041.png');">
+
+<div class="page-container">
+  <img src('florencio041.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(1.8rem, 7vw, 3.5rem); margin-bottom: 1.5rem;">DESEJOS</p>
   <div class="ft-poem" style="font-size: clamp(0.9rem, 2.8vw, 1.4rem);">
     <div class="poem-line">Era&nbsp;unha&nbsp;tarde;&nbsp;eu&nbsp;viña</div>
@@ -710,7 +835,9 @@
 </section>
 
 <!-- Páxina 42 -->
-<section style="background-image: url('florencio042.png');">
+
+<div class="page-container">
+  <img src('florencio042.png');">
   <p class="ft-normal">
     Na&nbsp;&nbsp;Coruña&nbsp;&nbsp;a&nbsp;&nbsp;familia&nbsp;&nbsp;viviu<br/>
     moitos&nbsp;&nbsp;anos&nbsp;&nbsp;nunha&nbsp;&nbsp;casa&nbsp;&nbsp;da<br/>
@@ -723,7 +850,9 @@
 </section>
 
 <!-- Páxina 43 -->
-<section style="background-image: url('florencio043.png');">
+
+<div class="page-container">
+  <img src('florencio043.png');">
   <p class="ft-emphasis">
     Na&nbsp;&nbsp;cidade&nbsp;&nbsp;herculina&nbsp;&nbsp;Florencio&nbsp;&nbsp;traballou&nbsp;&nbsp;como<br/>
     funcionario&nbsp;de&nbsp;Facenda&nbsp;e&nbsp;xunto&nbsp;con&nbsp;Manuel&nbsp;Murguía<br/>
@@ -741,7 +870,9 @@
 </section>
 
 <!-- Páxina 44 -->
-<section style="background-image: url('florencio044.png');">
+
+<div class="page-container">
+  <img src('florencio044.png');">
   <p class="ft-emphasis">
     Destacou&nbsp;&nbsp;tamén&nbsp;&nbsp;pola&nbsp;&nbsp;súa&nbsp;&nbsp;personalidade<br/>
     tímida,&nbsp;&nbsp;reservada&nbsp;&nbsp;e&nbsp;&nbsp;discreta,&nbsp;&nbsp;algo&nbsp;&nbsp;que&nbsp;&nbsp;se<br/>
@@ -758,12 +889,16 @@
 </section>
 
 <!-- Páxina 45 -->
-<section style="background-image: url('florencio045.png');">
+
+<div class="page-container">
+  <img src('florencio045.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.5rem, 10vw, 5rem);">Fotografías familiares</p>
 </section>
 
 <!-- Páxina 46 -->
-<section style="background-image: url('florencio046.png');">
+
+<div class="page-container">
+  <img src('florencio046.png');">
   <p class="ft-emphasis" style="position: absolute; top: 300px; left: 50%; transform: translateX(-50%);">Luísa (Ouces, 1863)</p>
   <p class="ft-emphasis" style="position: absolute; top: 300px; left: 70%; transform: translateX(-50%);">Carlos (Ouces, 1870)</p>
   <p class="ft-emphasis" style="position: absolute; top: 851px; left: 50%; transform: translateX(-50%);">César (Ouces, 1869)</p>
@@ -773,7 +908,9 @@
 </section>
 
 <!-- Páxina 47 -->
-<section style="background-image: url('florencio047.png');">
+
+<div class="page-container">
+  <img src('florencio047.png');">
   <p class="ft-normal">
     Aquí&nbsp;aparecen&nbsp;os&nbsp;irmáns&nbsp;Vaamonde&nbsp;Lores&nbsp;cos&nbsp;seus&nbsp;sobriños,<br/>
     os&nbsp;fillos&nbsp;de&nbsp;Carlos:&nbsp;sentada&nbsp;está&nbsp;Luísa&nbsp;con&nbsp;Roberto,&nbsp;ao&nbsp;lado<br/>
@@ -784,10 +921,15 @@
 </section>
 
 <!-- Páxina 48 -->
-<section style="background-image: url('florencio048.png');"></section>
+
+<div class="page-container">
+  <img src('florencio048.png');" alt="Páxina" class="image-background">
+</div>
 
 <!-- Páxina 49 -->
-<section style="background-image: url('florencio049.png');">
+
+<div class="page-container">
+  <img src('florencio049.png');">
   <p class="ft-emphasis">
     Esta&nbsp;imaxe&nbsp;é&nbsp;do&nbsp;13&nbsp;de&nbsp;setembro<br/>
     de&nbsp;1925,&nbsp;a&nbsp;última&nbsp;fotografía&nbsp;que<br/>
@@ -799,12 +941,16 @@
 </section>
 
 <!-- Páxina 50 -->
-<section style="background-image: url('florencio050.png');">
+
+<div class="page-container">
+  <img src('florencio050.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.5rem, 10vw, 5rem);">Obra literaria</p>
 </section>
 
 <!-- Páxina 51 -->
-<section style="background-image: url('florencio051.png');">
+
+<div class="page-container">
+  <img src('florencio051.png');">
   <p class="ft-normal">
     Desde&nbsp;&nbsp;o&nbsp;&nbsp;punto&nbsp;&nbsp;de&nbsp;&nbsp;vista&nbsp;&nbsp;literario&nbsp;&nbsp;Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;foi&nbsp;&nbsp;unha<br/>
     figura&nbsp;&nbsp;fundamental&nbsp;&nbsp;de&nbsp;&nbsp;finais&nbsp;&nbsp;do&nbsp;&nbsp;século&nbsp;&nbsp;XIX,&nbsp;&nbsp;un&nbsp;&nbsp;home&nbsp;valente&nbsp;&nbsp;que&nbsp;&nbsp;cría<br/>
@@ -824,10 +970,15 @@
 </section>
 
 <!-- Páxina 52 -->
-<section style="background-image: url('florencio052.png');"></section>
+
+<div class="page-container">
+  <img src('florencio052.png');" alt="Páxina" class="image-background">
+</div>
 
 <!-- Páxina 53 -->
-<section style="background-image: url('florencio053.png');">
+
+<div class="page-container">
+  <img src('florencio053.png');">
   <p class="ft-normal">
     Na&nbsp;&nbsp;poesía&nbsp;&nbsp;seguiu&nbsp;&nbsp;o&nbsp;&nbsp;camiño&nbsp;&nbsp;de&nbsp;&nbsp;Eduardo&nbsp;&nbsp;Pondal.&nbsp;&nbsp;En&nbsp;&nbsp;1894&nbsp;&nbsp;publicou&nbsp;<br/>
     <i class="ft-italic">Os Calaicos</i>,&nbsp;&nbsp;que&nbsp;&nbsp;é&nbsp;&nbsp;un&nbsp;&nbsp;poema&nbsp;&nbsp;épico&nbsp;&nbsp;en&nbsp;&nbsp;galego&nbsp;&nbsp;que&nbsp;&nbsp;conta&nbsp;&nbsp;as&nbsp;&nbsp;fazañas&nbsp;&nbsp;de<br/>
@@ -847,13 +998,17 @@
 </section>
 
 <!-- Páxina 54 -->
-<section style="background-image: url('florencio054.png');">
+
+<div class="page-container">
+  <img src('florencio054.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.2rem, 9vw, 4.5rem);">Ouces e o Outeiro<br/>na súa obra literaria</p>
   <p class="ft-emphasis" style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);">Aldarete</p>
 </section>
 
 <!-- Páxina 55 -->
-<section style="background-image: url('florencio055.png');">
+
+<div class="page-container">
+  <img src('florencio055.png');">
   <p class="ft-normal">
     Algo&nbsp;&nbsp;moi&nbsp;&nbsp;curioso&nbsp;&nbsp;é&nbsp;&nbsp;que&nbsp;&nbsp;Florencio&nbsp;&nbsp;empregaba&nbsp;&nbsp;varios&nbsp;&nbsp;pseudónimos<br/>
     para&nbsp;&nbsp;asinar&nbsp;&nbsp;os&nbsp;&nbsp;seus&nbsp;&nbsp;traballos&nbsp;&nbsp;e&nbsp;&nbsp;non&nbsp;&nbsp;sempre&nbsp;&nbsp;aparecía&nbsp;&nbsp;co&nbsp;&nbsp;seu&nbsp;&nbsp;nome<br/>
@@ -873,7 +1028,9 @@
 </section>
 
 <!-- Páxina 56 -->
-<section style="background-image: url('florencio056.png');">
+
+<div class="page-container">
+  <img src('florencio056.png');">
   <div class="ft-poem">
     <div class="poem-line">Outeiro,&nbsp;meu&nbsp;Outeiro,&nbsp;aquel&nbsp;frondente</div>
     <div class="poem-line">lugar&nbsp;risoño&nbsp;que,&nbsp;por&nbsp;berce&nbsp;un&nbsp;día</div>
@@ -900,7 +1057,9 @@
 </section>
 
 <!-- Páxina 57 -->
-<section style="background-image: url('florencio057.png');">
+
+<div class="page-container">
+  <img src('florencio057.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 3.5rem); margin-bottom: 1.5rem;">HIMNO A GALICIA</p>
   <div class="ft-poem" style="font-size: clamp(0.9rem, 2.8vw, 1.4rem);">
     <div class="poem-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barudos&nbsp;celtas,&nbsp;do&nbsp;Ourente&nbsp;a&nbsp;liña&nbsp;</div>
@@ -927,7 +1086,9 @@
 </section>
 
 <!-- Páxina 58 -->
-<section style="background-image: url('florencio058.png');">
+
+<div class="page-container">
+  <img src('florencio058.png');">
   <p class="ft-normal">
     O&nbsp;seu&nbsp;traballo&nbsp;foi&nbsp;enorme,&nbsp;pero&nbsp;durante&nbsp;moito&nbsp;tempo&nbsp;estivo&nbsp;case&nbsp;esquecido.&nbsp;Por<br/>
     sorte,&nbsp;&nbsp;hoxe&nbsp;&nbsp;está&nbsp;&nbsp;a&nbsp;&nbsp;ser&nbsp;&nbsp;redescuberto.&nbsp;&nbsp;Libros&nbsp;&nbsp;como&nbsp;&nbsp;<i class="ft-italic">Historia&nbsp;&nbsp;de&nbsp;&nbsp;Betanzos</i><br/>
@@ -947,12 +1108,16 @@
 </section>
 
 <!-- Páxina 59 -->
-<section style="background-image: url('florencio059.png');">
+
+<div class="page-container">
+  <img src('florencio059.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.2rem, 9vw, 4.5rem);">Político e activista cultural</p>
 </section>
 
 <!-- Páxina 60 -->
-<section style="background-image: url('florencio060.png');">
+
+<div class="page-container">
+  <img src('florencio060.png');">
   <p class="ft-normal">
     Durante&nbsp;&nbsp;a&nbsp;&nbsp;etapa&nbsp;&nbsp;coruñesa&nbsp;&nbsp;Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;traballou&nbsp;&nbsp;en<br/>
     Facenda&nbsp;e&nbsp;entrou&nbsp;en&nbsp;contacto&nbsp;con&nbsp;Manuel&nbsp;Murguía,&nbsp;con&nbsp;Eduardo<br/>
@@ -970,7 +1135,9 @@
 </section>
 
 <!-- Páxina 61 -->
-<section style="background-image: url('florencio061.png');">
+
+<div class="page-container">
+  <img src('florencio061.png');">
   <p class="ft-emphasis">
     Florencio&nbsp;Vaamonde&nbsp;(á&nbsp;esquerda)&nbsp;como&nbsp;membro&nbsp;do<br/>
     consello&nbsp;de&nbsp;redacción&nbsp;da&nbsp;<i class="ft-italic">Revista Gallega</i>.
@@ -978,7 +1145,9 @@
 </section>
 
 <!-- Páxina 62 -->
-<section style="background-image: url('florencio062.png');">
+
+<div class="page-container">
+  <img src('florencio062.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.2rem, 9vw, 4.5rem);">Florencio e a Real Academia Galega</p>
   <p class="ft-emphasis" style="position: absolute; bottom: 4rem; left: 50%; transform: translateX(-50%);">
     José Ogea, Manuel Murguía, Manuel Curros Enríquez e Andrés Martínez Salazar. De pé aparecen
@@ -989,7 +1158,9 @@
 </section>
 
 <!-- Páxina 63 -->
-<section style="background-image: url('florencio063.png');">
+
+<div class="page-container">
+  <img src('florencio063.png');">
   <p class="ft-emphasis">
     Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;continuou&nbsp;&nbsp;a&nbsp;&nbsp;carón&nbsp;&nbsp;dos&nbsp;&nbsp;seus<br/>
     compañeiros&nbsp;no&nbsp;camiño&nbsp;da&nbsp;dignificación&nbsp;da&nbsp;lingua&nbsp;e&nbsp;da&nbsp;cultura&nbsp;de<br/>
@@ -1008,7 +1179,9 @@
 </section>
 
 <!-- Páxina 64 -->
-<section style="background-image: url('florencio064.png');">
+
+<div class="page-container">
+  <img src('florencio064.png');">
   <div class="ft-poem">
     <div class="poem-line">A&nbsp;miña&nbsp;navicela&nbsp;vai&nbsp;pasando,</div>
     <div class="poem-line">aberta-las&nbsp;xuturas,&nbsp;sin&nbsp;goberno,</div>
@@ -1031,12 +1204,16 @@
 </section>
 
 <!-- Páxina 65 -->
-<section style="background-image: url('florencio065.png');">
+
+<div class="page-container">
+  <img src('florencio065.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.2rem, 9vw, 4.5rem);">Florencio e as<br/>Irmandades da Fala</p>
 </section>
 
 <!-- Páxina 66 -->
-<section style="background-image: url('florencio066.png');">
+
+<div class="page-container">
+  <img src('florencio066.png');">
   <p class="ft-normal">
     O&nbsp;18&nbsp;de&nbsp;maio&nbsp;de&nbsp;1916&nbsp;Antón&nbsp;Villar&nbsp;Ponte&nbsp;convoca&nbsp;unha&nbsp;xuntanza&nbsp;nos<br/>
     locais&nbsp;&nbsp;da&nbsp;&nbsp;Academia&nbsp;&nbsp;Galega&nbsp;&nbsp;á&nbsp;&nbsp;que&nbsp;&nbsp;asistiron&nbsp;&nbsp;arredor&nbsp;&nbsp;de&nbsp;&nbsp;20&nbsp;&nbsp;persoas,<br/>
@@ -1060,7 +1237,9 @@
 </section>
 
 <!-- Páxina 67 -->
-<section style="background-image: url('florencio067.png');">
+
+<div class="page-container">
+  <img src('florencio067.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 3.5rem); margin-bottom: 1.5rem;">Cal foi o labor de Florencio nas Irmandades da Fala?</p>
   <p class="ft-normal">
     Estivo&nbsp;presente&nbsp;na&nbsp;primeira&nbsp;xuntanza&nbsp;do&nbsp;18&nbsp;de&nbsp;maio&nbsp;de&nbsp;1916,&nbsp;na<br/>
@@ -1080,7 +1259,9 @@
 </section>
 
 <!-- Páxina 68 -->
-<section style="background-image: url('florencio068.png');">
+
+<div class="page-container">
+  <img src('florencio068.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 3.5rem); margin-bottom: 1.5rem;">A GALICIA</p>
   <div class="ft-poem" style="font-size: clamp(0.9rem, 2.8vw, 1.4rem);">
     <div class="poem-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-¿Por&nbsp;que,&nbsp;triste&nbsp;Galicia,&nbsp;a&nbsp;desventura&nbsp;</div>
@@ -1104,7 +1285,9 @@
 </section>
 
 <!-- Páxina 69 -->
-<section style="background-image: url('florencio069.png');">
+
+<div class="page-container">
+  <img src('florencio069.png');">
   <p class="ft-normal">
     Florencio&nbsp;&nbsp;faleceu&nbsp;&nbsp;na&nbsp;&nbsp;Coruña&nbsp;&nbsp;o&nbsp;&nbsp;19&nbsp;&nbsp;de&nbsp;&nbsp;outubro&nbsp;&nbsp;de&nbsp;&nbsp;1925&nbsp;&nbsp;e&nbsp;&nbsp;foi<br/>
     enterrado&nbsp;&nbsp;no&nbsp;&nbsp;cemiterio&nbsp;&nbsp;de&nbsp;&nbsp;Santo&nbsp;&nbsp;Amaro.&nbsp;&nbsp;Uns&nbsp;&nbsp;días&nbsp;&nbsp;máis&nbsp;&nbsp;tarde,&nbsp;&nbsp;na<br/>
@@ -1127,7 +1310,9 @@
 </section>
 
 <!-- Páxina 70 -->
-<section style="background-image: url('florencio070.png');">
+
+<div class="page-container">
+  <img src('florencio070.png');">
   <p class="ft-title ft-bold" style="font-size: clamp(2.5rem, 10vw, 5rem); margin-bottom: 1.5rem;">Capela de San Gregorio</p>
   <div class="ft-poem" style="font-size: clamp(0.9rem, 2.8vw, 1.4rem);">
     <div class="poem-line">Ti&nbsp;que&nbsp;outras&nbsp;veces,&nbsp;sonorosa&nbsp;lira,</div>
@@ -1155,7 +1340,9 @@
 </section>
 
 <!-- Páxina 71 -->
-<section style="background-image: url('florencio071.png');">
+
+<div class="page-container">
+  <img src('florencio071.png');">
   <p class="ft-normal">
     No&nbsp;&nbsp;centenario&nbsp;&nbsp;do&nbsp;&nbsp;seu&nbsp;&nbsp;pasamento,&nbsp;&nbsp;rendemos&nbsp;&nbsp;homenaxe&nbsp;&nbsp;a&nbsp;&nbsp;Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores<br/>
     (Ouces,&nbsp;&nbsp;1860&nbsp;&nbsp;–&nbsp;&nbsp;A&nbsp;&nbsp;Coruña,&nbsp;&nbsp;1925),&nbsp;&nbsp;escritor,&nbsp;&nbsp;tradutor&nbsp;&nbsp;e&nbsp;&nbsp;activista&nbsp;&nbsp;cultural,&nbsp;&nbsp;ponte&nbsp;&nbsp;entre&nbsp;&nbsp;o<br/>
@@ -1179,7 +1366,9 @@
 </section>
 
 <!-- Páxina 72 -->
-<section style="background-image: url('florencio072.png');">
+
+<div class="page-container">
+  <img src('florencio072.png');">
   <p class="ft-normal"><b>O noso agradecemento:</b></p>
   <p class="ft-normal" style="margin-top: 1.5rem;">
     Á&nbsp;&nbsp;familia&nbsp;Vaamonde&nbsp;&nbsp;Lores,&nbsp;&nbsp;a&nbsp;&nbsp;Isabel&nbsp;&nbsp;Seoane&nbsp;&nbsp;Sánchez&nbsp;&nbsp;e&nbsp;&nbsp;a&nbsp;Teresa<br/>
@@ -1197,15 +1386,18 @@
 </section>
 
 <!-- Páxina 73 -->
-<section style="background-image: url('florencio073.png');"></section>
+<div class="page-container">
+  <img src="florencio073.png" alt="Páxina 73" class="image-background">
+</div>
 
 <!-- Páxina 74 -->
-<section style="background-image: url('florencio074.png');">
+<div class="page-container">
+  <img src="florencio074.png" alt="Páxina 74" class="image-background">
   <p class="ft-name" style="color: #f6ecdf; font-size: clamp(1.8rem, 7vw, 3.5rem); font-weight: bold;">
     Departamento de Lingua Galega e Literatura<br/>
     do CPI Cruz do Sar de Bergondo
   </p>
-</section>
+</div>
 
 </body>
 </html>
