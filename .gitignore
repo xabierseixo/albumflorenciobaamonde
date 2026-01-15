@@ -1,1 +1,7 @@
-Nothing should be ignored based on the provided file changes, as they consist only of source/config files (.html, .sh) without any build artifacts, dependencies, or temporary files.
+```
+# Image optimization scripts - likely temporary/performance related
+*.log
+
+# Environment files (if any were detected in changes)
+.env*
+```
