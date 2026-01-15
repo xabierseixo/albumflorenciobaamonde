@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Florencio Vaamonde Lores</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.4;
+      color: #000;
+      background-color: #A0A0A0;
+      overflow-x: hidden;
+    }
+
+    .page-container {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      position: relative;
+      background-color: white;
+    }
+
+    .image-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Estilos para títulos e texto */
+    .ft-title {
+      font-family: 'Literata', serif;
+      font-weight: bold;
+      color: #361f05;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .ft-name {
+      font-family: 'Aniyah', serif;
+      font-size: clamp(2.5rem, 12vw, 6rem);
+      color: #f6ecdf;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .ft-poem {
+      font-family: 'Lato', serif;
+      font-size: clamp(1rem, 3.5vw, 1.8rem);
+      color: #2b2e2d;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 1rem auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .ft-normal {
+      font-size: clamp(1rem, 3.5vw, 1.8rem);
+      color: #000;
+      max-width: 900px;
+      margin: 1rem auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .ft-emphasis {
+      color: #361f05;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .ft-italic {
+      font-style: italic;
+    }
+
+    .ft-small {
+      font-size: clamp(0.85rem, 2.8vw, 1.2rem);
+      color: #2b2e2d;
+    }
+
+    .ft-center {
+      text-align: center;
+    }
+
+    .ft-bold {
+      font-weight: bold;
+    }
+
+    .poem-line {
+      margin-bottom: 0.6em;
+    }
+
+    /* Media queries para móbiles */
+    @media (max-width: 768px) {
+      .page-container {
+        padding: 1.5rem 1rem;
+      }
+      
+      .ft-name {
+        font-size: clamp(2rem, 14vw, 5rem);
+      }
+      
+      .ft-title, .ft-poem, .ft-normal, .ft-emphasis {
+        font-size: clamp(0.9rem, 4vw, 1.4rem);
+        padding: 10px;
+      }
+      
+      .image-background {
+        display: none;
+      }
+      
+      .page-container {
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    /* Para pantallas pequenas */
+    @media (max-width: 480px) {
+      .page-container {
+        padding: 1rem 0.5rem;
+      }
+      
+      .ft-title, .ft-poem, .ft-normal, .ft-emphasis {
+        font-size: clamp(0.8rem, 5vw, 1.2rem);
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Páxina 1 -->
+<div class="page-container">
+  <img src="optimized_images/florencio001.png" alt="Portada" class="image-background">
+</div>
+
+<!-- Páxina 2 (só imaxe) -->
+<div class="page-container">
+  <img src="optimized_images/florencio002.png" alt="Páxina 2" class="image-background">
+</div>
+
+<!-- Páxina 3 -->
+<div class="page-container">
+  <img src="optimized_images/florencio003.png" alt="Páxina 3" class="image-background">
+  <p class="ft-normal">
+    O&nbsp;&nbsp;19&nbsp;&nbsp;de&nbsp;&nbsp;outubro&nbsp;&nbsp;de&nbsp;&nbsp;2025&nbsp;&nbsp;cumpríronse&nbsp;&nbsp;cen&nbsp;&nbsp;anos&nbsp;&nbsp;do<br/>
+    falecemento&nbsp;&nbsp;de&nbsp;&nbsp;Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;e&nbsp;&nbsp;canto&nbsp;&nbsp;máis&nbsp;&nbsp;nos<br/>
+    fomos&nbsp;achegando&nbsp;á&nbsp;súa&nbsp;vida,&nbsp;á&nbsp;súa&nbsp;personalidade&nbsp;e&nbsp;á&nbsp;súa&nbsp;obra,<br/>
+    máis&nbsp;necesario&nbsp;se&nbsp;nos&nbsp;fixo&nbsp;prolongar&nbsp;no&nbsp;tempo&nbsp;esa&nbsp;homenaxe<br/>
+    para&nbsp;poder&nbsp;poñer&nbsp;en&nbsp;valor&nbsp;a&nbsp;súa&nbsp;figura.<br/>
+    Cómpre&nbsp;telo&nbsp;en&nbsp;consideración&nbsp;como&nbsp;un&nbsp;dos&nbsp;maiores&nbsp;referentes<br/>
+    do&nbsp;seu&nbsp;tempo&nbsp;porque&nbsp;estamos&nbsp;diante&nbsp;dun&nbsp;home&nbsp;cun&nbsp;alto&nbsp;nivel<br/>
+    de&nbsp;formación&nbsp;que&nbsp;mostrou&nbsp;unha&nbsp;verdadeira&nbsp;paixón&nbsp;polas&nbsp;terras<br/>
+    bergondesas&nbsp;onde&nbsp;viviu.<br/>
+    A&nbsp;&nbsp;nosa&nbsp;&nbsp;intención&nbsp;&nbsp;é&nbsp;&nbsp;que&nbsp;&nbsp;coñezades&nbsp;&nbsp;a&nbsp;&nbsp;través&nbsp;&nbsp;deste&nbsp;&nbsp;álbum&nbsp;&nbsp;e<br/>
+    desta&nbsp;presentación,&nbsp;a&nbsp;vida&nbsp;e&nbsp;o&nbsp;legado&nbsp;de&nbsp;don&nbsp;Florencio&nbsp;e&nbsp;a&nbsp;súa<br/>
+    ligazón&nbsp;con&nbsp;Bergondo,&nbsp;e&nbsp;máis&nbsp;concretamente&nbsp;coa&nbsp;parroquia&nbsp;de<br/>
+    Ouces,&nbsp;onde&nbsp;naceu.
+  </p>
+</div>
+
+<!-- Páxina 4 -->
+<div class="page-container">
+  <img src="optimized_images/florencio004.png" alt="Páxina 4" class="image-background">
+  <p class="ft-title ft-bold">Bergondo:&nbsp;xoia&nbsp;das&nbsp;Mariñas&nbsp;e&nbsp;lugar&nbsp;de&nbsp;nacemento&nbsp;de&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores</p>
+</div>
+
+<!-- Páxina 5 -->
+<div class="page-container">
+  <img src="optimized_images/florencio005.png" alt="Páxina 5" class="image-background">
+  <p class="ft-normal">
+    Bergondo&nbsp;é&nbsp;o&nbsp;lugar&nbsp;de&nbsp;nacemento&nbsp;de&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores<br/>
+    e&nbsp;&nbsp;está&nbsp;&nbsp;localizado&nbsp;&nbsp;na&nbsp;&nbsp;marxe&nbsp;&nbsp;occidental&nbsp;&nbsp;da&nbsp;&nbsp;ría&nbsp;&nbsp;de&nbsp;&nbsp;Betanzos,&nbsp;&nbsp;no<br/>
+    corazón&nbsp;do&nbsp;Golfo&nbsp;Ártabro,&nbsp;en&nbsp;plena&nbsp;comarca&nbsp;natural&nbsp;das&nbsp;Mariñas<br/>
+    dos&nbsp;Condes.&nbsp;
+  </p>
+  <p class="ft-normal">
+    Etimoloxicamente,&nbsp;&nbsp;Bergondo&nbsp;&nbsp;indica&nbsp;&nbsp;unha&nbsp;&nbsp;orixe&nbsp;&nbsp;céltica&nbsp;&nbsp;ou<br/>
+    xermánica,&nbsp;que&nbsp;faría&nbsp;referencia&nbsp;ao&nbsp;rei&nbsp;Brigo&nbsp;ou&nbsp;a&nbsp;unha&nbsp;elevación<br/>
+    montañosa:&nbsp;<i class="ft-italic">berg.</i>
+  </p>
+  <p class="ft-normal">
+    Limita&nbsp;con&nbsp;Sada,&nbsp;Paderne,&nbsp;Abegondo,&nbsp;Betanzos&nbsp;e&nbsp;Cambre&nbsp;e&nbsp;está<br/>
+    dentro&nbsp;&nbsp;da&nbsp;&nbsp;Reserva&nbsp;&nbsp;da&nbsp;&nbsp;Biosfera&nbsp;&nbsp;das&nbsp;&nbsp;Mariñas&nbsp;&nbsp;Coruñesas&nbsp;&nbsp;e&nbsp;&nbsp;Terras<br/>
+    do&nbsp;Mandeo.
+  </p>
+</div>
+
+<!-- Páxina 6 -->
+<div class="page-container">
+  <img src="optimized_images/florencio006.png" alt="Páxina 6" class="image-background">
+</div>
+
+<!-- Páxina 7 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio007.png" alt="Páxina 7" class="image-background">
+  <p class="ft-normal">
+    Dentro&nbsp;&nbsp;do&nbsp;&nbsp;Concello&nbsp;&nbsp;de&nbsp;&nbsp;Bergondo&nbsp;&nbsp;destacan&nbsp;&nbsp;moitos<br/>
+    lugares&nbsp;de&nbsp;interese&nbsp;natural&nbsp;como&nbsp;son&nbsp;as&nbsp;marismas&nbsp;ou&nbsp;as&nbsp;&nbsp;<br/>
+    praias&nbsp;de&nbsp;Gandarío,&nbsp;o&nbsp;Regueiro&nbsp;ou&nbsp;o&nbsp;Pedrido.&nbsp;&nbsp;
+  </p>
+  <p class="ft-normal">
+    Tamén&nbsp;&nbsp;salientan&nbsp;bens&nbsp;de&nbsp;interese&nbsp;cultural:&nbsp;o&nbsp;Mosteiro<br/>
+    de&nbsp;&nbsp;San&nbsp;&nbsp;Salvador,&nbsp;&nbsp;o&nbsp;&nbsp;Pazo&nbsp;&nbsp;de&nbsp;&nbsp;Mariñán,&nbsp;&nbsp;a&nbsp;&nbsp;Ponte&nbsp;&nbsp;do<br/>
+    Pedrido,&nbsp;&nbsp;o&nbsp;&nbsp;edificio&nbsp;&nbsp;modernista&nbsp;&nbsp;da&nbsp;&nbsp;Senra&nbsp;&nbsp;xunto&nbsp;&nbsp;cun&nbsp;&nbsp;bo<br/>
+    número&nbsp;de&nbsp;pazos&nbsp;que&nbsp;atopamos&nbsp;espallados&nbsp;por&nbsp;todo&nbsp;o<br/>
+    seu&nbsp;territorio.
+  </p>
+</div>
+
+<!-- Páxina 8 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio008.png" alt="Páxina 8" class="image-background">
+</div>
+
+<!-- Páxina 9 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio009.png" alt="Páxina 9" class="image-background">
+  <p class="ft-normal">
+    Bergondo&nbsp;&nbsp;ten&nbsp;&nbsp;nove&nbsp;&nbsp;parroquias,&nbsp;&nbsp;setenta&nbsp;&nbsp;e&nbsp;&nbsp;dúas&nbsp;&nbsp;entidades&nbsp;&nbsp;ou<br/>
+    lugares,&nbsp;e&nbsp;a&nbsp;densidade&nbsp;de&nbsp;poboación&nbsp;é&nbsp;de&nbsp;190&nbsp;habitantes&nbsp;por<br/>
+    quilómetro&nbsp;cadrado.
+  </p>
+  <p class="ft-normal">
+    As&nbsp;&nbsp;parroquias&nbsp;&nbsp;son:&nbsp;&nbsp;Babío,&nbsp;&nbsp;Guísamo,&nbsp;&nbsp;Lubre,&nbsp;&nbsp;Rois,&nbsp;&nbsp;Vixoi,<br/>
+    Cortiñán,&nbsp;&nbsp;Moruxo,&nbsp;&nbsp;Bergondo&nbsp;&nbsp;e&nbsp;<b class="ft-emphasis">Ouces</b>,&nbsp;&nbsp;onde&nbsp;&nbsp;naceu<br/>
+    Florencio&nbsp;Vaamonde&nbsp;Lores.
+  </p>
+  <p class="ft-normal">
+    Ouces&nbsp;á&nbsp;súa&nbsp;vez&nbsp;divídese&nbsp;en:&nbsp;Cangas,&nbsp;O&nbsp;Casal,&nbsp;Cornide,&nbsp;Costa<br/>
+    de&nbsp;Ouces,&nbsp;Gandarío,&nbsp;A&nbsp;Lagoa,&nbsp;O&nbsp;Mato,&nbsp;Mesoiro,&nbsp;Reboredo,&nbsp;O<br/>
+    Río,&nbsp;Silvoso,&nbsp;Tatín&nbsp;e&nbsp;<b class="ft-emphasis">O&nbsp;Outeiro</b>&nbsp;onde&nbsp;estaba&nbsp;a&nbsp;casa&nbsp;familiar&nbsp;da<br/>
+    familia&nbsp;Vaamonde.
+  </p>
+</div>
+
+<!-- Páxina 10 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio010.png" alt="Páxina 10" class="image-background">
+  <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 4.5rem);">Ouces&nbsp;e&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores</p>
+</div>
+
+<!-- Páxina 11 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio011.png" alt="Páxina 11" class="image-background">
+  <p class="ft-normal">Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;naceu&nbsp;&nbsp;na</p>
+  <p class="ft-normal">parroquia&nbsp;&nbsp;bergondesa&nbsp;&nbsp;de&nbsp;&nbsp;Ouces&nbsp;&nbsp;o&nbsp;&nbsp;2&nbsp;&nbsp;de</p>
+  <p class="ft-normal">abril&nbsp;&nbsp;de&nbsp;&nbsp;1860&nbsp;&nbsp;no&nbsp;&nbsp;seo&nbsp;&nbsp;dunha&nbsp;&nbsp;familia</p>
+  <p class="ft-normal">fidalga&nbsp;de&nbsp;tradición&nbsp;militar.&nbsp;</p>
+  <p class="ft-normal">O&nbsp;&nbsp;seu&nbsp;&nbsp;pai&nbsp;&nbsp;era&nbsp;&nbsp;Juan&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Malvido,</p>
+  <p class="ft-normal">capitán&nbsp;de&nbsp;Infantería&nbsp;&nbsp;que&nbsp;participou&nbsp;na</p>
+  <p class="ft-normal">Guerra&nbsp;Carlista&nbsp;e&nbsp;foi&nbsp;premiado&nbsp;coa&nbsp;Cruz</p>
+  <p class="ft-normal">Laureada&nbsp;&nbsp;de&nbsp;&nbsp;San&nbsp;&nbsp;Fernando&nbsp;&nbsp;como&nbsp;&nbsp;o</p>
+  <p class="ft-normal">demostra&nbsp;&nbsp;este&nbsp;&nbsp;documento&nbsp;&nbsp;asinado&nbsp;&nbsp;pola</p>
+  <p class="ft-normal">raíña&nbsp;Isabel&nbsp;II.</p>
+</div>
+
+<!-- Páxina 12 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio012.png" alt="Páxina 12" class="image-background">
+  <p class="ft-emphasis">A&nbsp;súa&nbsp;nai&nbsp;era&nbsp;Brígida&nbsp;Lores&nbsp;Batell,</p>
+  <p class="ft-emphasis">da&nbsp;&nbsp;que&nbsp;&nbsp;se&nbsp;&nbsp;conservan&nbsp;&nbsp;estes&nbsp;&nbsp;dous</p>
+  <p class="ft-emphasis">retratos.</p>
+  <p class="ft-emphasis">A&nbsp;&nbsp;continuación&nbsp;&nbsp;imos&nbsp;&nbsp;describir&nbsp;&nbsp;</p>
+  <p class="ft-emphasis">unha&nbsp;&nbsp;serie&nbsp;&nbsp;de&nbsp;&nbsp;lugares&nbsp;&nbsp;que&nbsp;&nbsp;foron</p>
+  <p class="ft-emphasis">importantes&nbsp;para&nbsp;o&nbsp;noso</p>
+  <p class="ft-emphasis">homenaxeado.</p>
+</div>
+
+<!-- Páxina 13 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio013.png" alt="Páxina 13" class="image-background">
+  <p class="ft-title ft-bold" style="font-size: clamp(2.2rem, 9vw, 5rem);">A&nbsp;casa&nbsp;familiar</p>
+</div>
+
+<!-- Páxina 14 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio014.png" alt="Páxina 14" class="image-background">
+  <p class="ft-normal">
+    Esta&nbsp;é&nbsp;a&nbsp;casa&nbsp;familiar&nbsp;da&nbsp;familia&nbsp;Vaamonde&nbsp;Lores.&nbsp;Sitúase&nbsp;no<br/>
+    lugar&nbsp;&nbsp;do&nbsp;&nbsp;Outeiro&nbsp;&nbsp;número&nbsp;&nbsp;5&nbsp;&nbsp;aínda&nbsp;&nbsp;que&nbsp;&nbsp;antigamente&nbsp;&nbsp;tiña&nbsp;&nbsp;o<br/>
+    número&nbsp;3.&nbsp;<br/>
+    Foi&nbsp;propiedade&nbsp;dos&nbsp;pais&nbsp;de&nbsp;Florencio&nbsp;ata&nbsp;1878,&nbsp;ano&nbsp;no&nbsp;que<br/>
+    por&nbsp;diversos&nbsp;motivos,&nbsp;a&nbsp;familia&nbsp;deixou&nbsp;Ouces&nbsp;e&nbsp;marchou&nbsp;vivir<br/>
+    á&nbsp;Coruña.<br/>
+    Nela&nbsp;&nbsp;vivía&nbsp;&nbsp;o&nbsp;&nbsp;matrimonio&nbsp;&nbsp;formado&nbsp;&nbsp;por&nbsp;&nbsp;Juan&nbsp;&nbsp;Vaamonde<br/>
+    Malvido&nbsp;e&nbsp;Brígida&nbsp;Lores&nbsp;Batell&nbsp;cos&nbsp;seus&nbsp;fillos.
+  </p>
+</div>
+
+<!-- Páxina 15 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio015.png" alt="Páxina 15" class="image-background">
+  <p class="ft-normal">César&nbsp;Vaamonde&nbsp;describiu&nbsp;así&nbsp;a&nbsp;propiedade:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+  <p class="ft-italic ft-normal">
+    La&nbsp;casa&nbsp;es&nbsp;la&nbsp;señalada&nbsp;actualmente&nbsp;con&nbsp;el&nbsp;número&nbsp;3&nbsp;y&nbsp;pertenece&nbsp;a&nbsp;la&nbsp;parroquia&nbsp;de<br/>
+    Ouces.&nbsp;&nbsp;Tiene&nbsp;&nbsp;unidos&nbsp;&nbsp;la&nbsp;&nbsp;huerta&nbsp;&nbsp;y&nbsp;&nbsp;heredades&nbsp;&nbsp;todo&nbsp;&nbsp;ello&nbsp;&nbsp;de&nbsp;&nbsp;30&nbsp;&nbsp;ferrados&nbsp;&nbsp;de&nbsp;&nbsp;estensión:<br/>
+    dicha&nbsp;&nbsp;casa&nbsp;&nbsp;está&nbsp;&nbsp;dentro&nbsp;&nbsp;de&nbsp;&nbsp;la&nbsp;&nbsp;finca,&nbsp;&nbsp;un&nbsp;&nbsp;poquito&nbsp;&nbsp;retirada&nbsp;&nbsp;de&nbsp;&nbsp;los&nbsp;&nbsp;caminos&nbsp;&nbsp;que&nbsp;&nbsp;de<br/>
+    Bergondiño&nbsp;y&nbsp;Lubre,&nbsp;juntándose&nbsp;cerca&nbsp;de&nbsp;su&nbsp;portal,&nbsp;conducen&nbsp;a&nbsp;Cangas.&nbsp;Recayó&nbsp;en&nbsp;los<br/>
+    Vaamondes&nbsp;por&nbsp;línea&nbsp;de&nbsp;los&nbsp;Outeiros&nbsp;y&nbsp;Sotos.&nbsp;Los&nbsp;documentos&nbsp;más&nbsp;antiguos&nbsp;que&nbsp;he<br/>
+    hallado&nbsp;referentes&nbsp;a&nbsp;ella,&nbsp;son&nbsp;del&nbsp;año&nbsp;1518&nbsp;[...].<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esta&nbsp;es,&nbsp;pues,&nbsp;la&nbsp;famosa&nbsp;casa,&nbsp;en&nbsp;donde&nbsp;yo,&nbsp;mis&nbsp;hermanos,&nbsp;padre,&nbsp;abuelo,&nbsp;parientes<br/>
+    y&nbsp;&nbsp;antepasados&nbsp;&nbsp;de&nbsp;tantos&nbsp;&nbsp;siglos,&nbsp;&nbsp;han&nbsp;&nbsp;nacido,&nbsp;&nbsp;se&nbsp;&nbsp;criaron,&nbsp;y&nbsp;vivieron;&nbsp;&nbsp;en&nbsp;&nbsp;donde&nbsp;tantos<br/>
+    sucesos&nbsp;de&nbsp;familia&nbsp;se&nbsp;desarrollaron;&nbsp;en&nbsp;donde&nbsp;tantas&nbsp;fiestas,&nbsp;saraos,&nbsp;bailes&nbsp;y&nbsp;reuniones<br/>
+    tuvieron&nbsp;lugar;&nbsp;casa&nbsp;que&nbsp;era&nbsp;famosa&nbsp;en&nbsp;todas&nbsp;las&nbsp;mariñas&nbsp;visitadísima&nbsp;de&nbsp;toda&nbsp;clase<br/>
+    de&nbsp;personas;&nbsp;y&nbsp;cuya&nbsp;huerta&nbsp;y&nbsp;jardines&nbsp;llamaban&nbsp;la&nbsp;atención&nbsp;en&nbsp;toda&nbsp;la&nbsp;comarca&nbsp;y&nbsp;aún<br/>
+    fuera&nbsp;de&nbsp;ella.&nbsp;Hoy&nbsp;todo&nbsp;ha&nbsp;cambiado[...].
+  </p>
+</div>
+
+<!-- Páxina 16 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio016.png" alt="Páxina 16" class="image-background">
+  <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 4rem);">Infancia&nbsp;de&nbsp;<br/>Florencio&nbsp;<br/>Vaamonde&nbsp;Lores</p>
+</div>
+
+<!-- Páxina 17 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio017.png" alt="Páxina 17" class="image-background">
+  <p class="ft-emphasis">
+    Desde&nbsp;o&nbsp;seu&nbsp;nacemento&nbsp;o&nbsp;dous&nbsp;de&nbsp;abril&nbsp;de&nbsp;1860&nbsp;ata&nbsp;que&nbsp;tiña<br/>
+    18&nbsp;&nbsp;anos,&nbsp;&nbsp;Florencio&nbsp;&nbsp;Vaamonde&nbsp;&nbsp;Lores&nbsp;&nbsp;viviu&nbsp;&nbsp;nesta&nbsp;&nbsp;casa&nbsp;&nbsp;do<br/>
+    Outeiro&nbsp;&nbsp;en&nbsp;&nbsp;Ouces&nbsp;&nbsp;arredor&nbsp;&nbsp;da&nbsp;&nbsp;cal&nbsp;&nbsp;están&nbsp;&nbsp;os&nbsp;&nbsp;seus&nbsp;&nbsp;lugares<br/>
+    favoritos:&nbsp;&nbsp;a&nbsp;&nbsp;fonte&nbsp;&nbsp;do&nbsp;&nbsp;Picho,&nbsp;&nbsp;a&nbsp;&nbsp;fonte&nbsp;&nbsp;da&nbsp;&nbsp;Curuxa,&nbsp;&nbsp;os&nbsp;&nbsp;castros,&nbsp;&nbsp;o<br/>
+    Roibal...
+  </p>
+  <p class="ft-emphasis">
+    Estudou&nbsp;na&nbsp;escola&nbsp;do&nbsp;Outeiro&nbsp;e&nbsp;gustáballe&nbsp;escribir&nbsp;apoiado&nbsp;ao<br/>
+    pé&nbsp;dun&nbsp;castiñeiro&nbsp;que&nbsp;había&nbsp;enfronte&nbsp;da&nbsp;súa&nbsp;casa.
+  </p>
+  <p class="ft-emphasis">
+    Moitos&nbsp;dos&nbsp;seus&nbsp;poemas&nbsp;lembran&nbsp;esta&nbsp;época&nbsp;feliz.
+  </p>
+</div>
+
+<!-- Páxina 18 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio018.png" alt="Páxina 18" class="image-background">
+  <p class="ft-normal">
+    Cando&nbsp;contaba&nbsp;18&nbsp;anos,&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores&nbsp;viaxou<br/>
+    por&nbsp;primeira&nbsp;vez&nbsp;a&nbsp;Coruña,&nbsp;onde&nbsp;fixo&nbsp;estudos&nbsp;de&nbsp;Dereito.<br/>
+    Rematounos&nbsp;en&nbsp;1881,&nbsp;e&nbsp;logo&nbsp;de&nbsp;ser&nbsp;declarado&nbsp;merecedor<br/>
+    do&nbsp;Premio&nbsp;Extraordinario,&nbsp;dirixiuse&nbsp;a&nbsp;Madrid&nbsp;para<br/>
+    continuar&nbsp;os&nbsp;seus&nbsp;estudos.
+  </p>
+</div>
+
+<!-- Páxina 19 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio019.png" alt="Páxina 19" class="image-background">
+  <p class="ft-emphasis">
+    En&nbsp;Madrid,&nbsp;realizou&nbsp;estudos&nbsp;de&nbsp;Ciencias&nbsp;Políticas,<br/>
+    Filosofía,&nbsp;Letras,&nbsp;Historia,&nbsp;Arqueoloxía,&nbsp;Filoloxía<br/>
+    Románica,&nbsp;e&nbsp;Historia&nbsp;Natural.&nbsp;
+  </p>
+  <p class="ft-emphasis">
+    Aforrou&nbsp;múltiples&nbsp;conocementos&nbsp;e&nbsp;relacionouse<br/>
+    con&nbsp;importantes&nbsp;personalidades&nbsp;do&nbsp;mundo<br/>
+    académico,&nbsp;científico,&nbsp;cultural&nbsp;e&nbsp;político.<br/>
+    Participou&nbsp;en&nbsp;actos&nbsp;académicos,&nbsp;literarios,&nbsp;culturais<br/>
+    e&nbsp;políticos.
+  </p>
+</div>
+
+<!-- Páxina 20 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio020.png" alt="Páxina 20" class="image-background">
+  <p class="ft-emphasis">
+    Durante&nbsp;os&nbsp;anos&nbsp;que&nbsp;pasou&nbsp;en&nbsp;Madrid,&nbsp;Florencio<br/>
+    Vaamonde&nbsp;Lores&nbsp;foi&nbsp;declarado&nbsp;licenciado&nbsp;en<br/>
+    Dereito,&nbsp;en&nbsp;Filosofía&nbsp;y&nbsp;Letras,&nbsp;en&nbsp;Ciencias<br/>
+    Políticas,&nbsp;y&nbsp;en&nbsp;Historia.&nbsp;
+  </p>
+  <p class="ft-emphasis">
+    Foi&nbsp;nomeado&nbsp;Arqueólogo,&nbsp;Paleógrafo,&nbsp;Antropólogo,<br/>
+    Etnógrafo,&nbsp;Filólogo,&nbsp;Historiador,&nbsp;Xeógrafo,<br/>
+    Naturalista,&nbsp;etc.
+  </p>
+</div>
+
+<!-- Páxina 21 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio021.png" alt="Páxina 21" class="image-background">
+  <p class="ft-emphasis">
+    Ademais,&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores&nbsp;obtivo<br/>
+    importantes&nbsp;reconocementos&nbsp;e&nbsp;premios<br/>
+    académicos,&nbsp;entre&nbsp;os&nbsp;que&nbsp;destacan:<br/>
+    •&nbsp;Premio&nbsp;Extraordinario&nbsp;de&nbsp;Dereito<br/>
+    •&nbsp;Premio&nbsp;Extraordinario&nbsp;de&nbsp;Filosofía<br/>
+    •&nbsp;Premio&nbsp;Extraordinario&nbsp;de&nbsp;Letras<br/>
+    •&nbsp;Premio&nbsp;Extraordinario&nbsp;de&nbsp;Historia<br/>
+    •&nbsp;Premio&nbsp;Extraordinario&nbsp;de&nbsp;Ciencias<br/>
+    &nbsp;&nbsp;Políticas
+  </p>
+</div>
+
+<!-- Páxina 22 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio022.png" alt="Páxina 22" class="image-background">
+  <p class="ft-normal">
+    En&nbsp;1886,&nbsp;cando&nbsp;contaba&nbsp;26&nbsp;anos,&nbsp;Florencio<br/>
+    Vaamonde&nbsp;Lores&nbsp;regresou&nbsp;a&nbsp;Galicia,&nbsp;concretamente<br/>
+    á&nbsp;Coruña,&nbsp;onde&nbsp;fixo&nbsp;o&nbsp;exercicio&nbsp;da&nbsp;abogacía<br/>
+    e&nbsp;comezou&nbsp;a&nbsp;publicar&nbsp;artigos&nbsp;en&nbsp;diversas<br/>
+    publicacións.&nbsp;
+  </p>
+  <p class="ft-normal">
+    Asuntos&nbsp;de&nbsp;dereito,&nbsp;historia,&nbsp;etnografía,<br/>
+    xeografía,&nbsp;lingua,&nbsp;literatura,&nbsp;arqueoloxía,<br/>
+    economía,&nbsp;etc.,&nbsp;foron&nbsp;algúns&nbsp;dos&nbsp;temas<br/>
+    abordados.
+  </p>
+</div>
+
+<!-- Páxina 23 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio023.png" alt="Páxina 23" class="image-background">
+  <p class="ft-normal">
+    No&nbsp;ano&nbsp;1890,&nbsp;Florencio&nbsp;Vaamonde&nbsp;Lores<br/>
+    participou&nbsp;na&nbsp;constitución&nbsp;da<br/>
+    Sociedad&nbsp;Económica<br/>
+    de&nbsp;Amigos&nbsp;del&nbsp;País.&nbsp;
+  </p>
+  <p class="ft-normal">
+    Dous&nbsp;anos&nbsp;despois,&nbsp;en&nbsp;1892,&nbsp;fixo<br/>
+    o&nbsp;mesmo&nbsp;coa&nbsp;Real&nbsp;Academia<br/>
+    Galega,&nbsp;da&nbsp;que&nbsp;chegou&nbsp;a<br/>
+    ser&nbsp;secretario&nbsp;y&nbsp;presidente.
+  </p>
+</div>
+
+<!-- Páxina 24 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio024.png" alt="Páxina 24" class="image-background">
+  <p class="ft-emphasis">
+    Florencio&nbsp;Vaamonde&nbsp;Lores&nbsp;fixo<br/>
+    unha&nbsp;importante&nbsp;labor&nbsp;como<br/>
+    membro&nbsp;da&nbsp;Real&nbsp;Academia<br/>
+    Galega.&nbsp;
+  </p>
+  <p class="ft-emphasis">
+    Participou&nbsp;activamente&nbsp;na<br/>
+    elaboración&nbsp;do<br/>
+    Diccionario&nbsp;Castelán-Galego<br/>
+    e&nbsp;fixo&nbsp;numerosas<br/>
+    achegas&nbsp;ao<br/>
+    Tesoro&nbsp;da&nbsp;Lingua&nbsp;Galega.
+  </p>
+</div>
+
+<!-- Páxina 25 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio025.png" alt="Páxina 25" class="image-background">
+  <p class="ft-emphasis">
+    Acreditado&nbsp;como&nbsp;un<br/>
+    dos&nbsp;maiores<br/>
+    especialistas<br/>
+    en&nbsp;lingua<br/>
+    galega,&nbsp;Florencio<br/>
+    Vaamonde<br/>
+    Lores<br/>
+    concibiu<br/>
+    e&nbsp;elaborou<br/>
+    importantes<br/>
+    traballos<br/>
+    lingüísticos.
+  </p>
+</div>
+
+<!-- Páxina 26 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio026.png" alt="Páxina 26" class="image-background">
+  <p class="ft-emphasis">
+    En&nbsp;1906,&nbsp;Florencio<br/>
+    Vaamonde&nbsp;Lores<br/>
+    presentou&nbsp;unha<br/>
+    nova<br/>
+    proposta<br/>
+    de<br/>
+    gramática<br/>
+    galega<br/>
+    que,<br/>
+    entre<br/>
+    outras<br/>
+    cousas,<br/>
+    recoñecía<br/>
+    a<br/>
+    existencia<br/>
+    de<br/>
+    dúas<br/>
+    variantes<br/>
+    dialectais:<br/>
+    a&nbsp;occidental<br/>
+    e&nbsp;a<br/>
+    oriental.
+  </p>
+</div>
+
+<!-- Páxina 27 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio027.png" alt="Páxina 27" class="image-background">
+  <p class="ft-emphasis">
+    Florencio<br/>
+    Vaamonde<br/>
+    Lores<br/>
+    tamén<br/>
+    fixo<br/>
+    importantes<br/>
+    achegas<br/>
+    á<br/>
+    literatura<br/>
+    galega.<br/>
+    Recolleu,<br/>
+    estudou<br/>
+    e&nbsp;publicou<br/>
+    numerosos<br/>
+    textos<br/>
+    medievais<br/>
+    e<br/>
+    tradicionais.
+  </p>
+</div>
+
+<!-- Páxina 28 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio028.png" alt="Páxina 28" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    recuperación<br/>
+    e<br/>
+    edición<br/>
+    de<br/>
+    obras<br/>
+    literarias<br/>
+    clásicas<br/>
+    formaron<br/>
+    parte<br/>
+    fundamental<br/>
+    da<br/>
+    súa<br/>
+    actividade<br/>
+    cultural.<br/>
+    Entre<br/>
+    elas,<br/>
+    destaca<br/>
+    a<br/>
+    súa<br/>
+    edición<br/>
+    das<br/>
+    Cantigas<br/>
+    de<br/>
+    Santa<br/>
+    María.
+  </p>
+</div>
+
+<!-- Páxina 29 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio029.png" alt="Páxina 29" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    actividade<br/>
+    científica<br/>
+    de<br/>
+    Florencio<br/>
+    Vaamonde<br/>
+    Lores<br/>
+    non<br/>
+    se<br/>
+    limitou<br/>
+    á<br/>
+    lingua<br/>
+    e<br/>
+    á<br/>
+    literatura.<br/>
+    A<br/>
+    historia,<br/>
+    a<br/>
+    arqueoloxía,<br/>
+    a<br/>
+    etnografía,<br/>
+    a<br/>
+    xeografía<br/>
+    e<br/>
+    outros<br/>
+    campos<br/>
+    foron<br/>
+    obxecto<br/>
+    da<br/>
+    súa<br/>
+    atención.
+  </p>
+</div>
+
+<!-- Páxina 30 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio030.png" alt="Páxina 30" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    histórica<br/>
+    máis<br/>
+    coñecida<br/>
+    é<br/>
+    a<br/>
+    Historia<br/>
+    de<br/>
+    Galicia,<br/>
+    que<br/>
+    se<br/>
+    publicou<br/>
+    en<br/>
+    varios<br/>
+    volumes<br/>
+    e<br/>
+    constitúe<br/>
+    unha<br/>
+    referencia<br/>
+    obriga<br/>
+    para<br/>
+    o<br/>
+    coñecemento<br/>
+    da<br/>
+    historia<br/>
+    galega.
+  </p>
+</div>
+
+<!-- Páxina 31 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio031.png" alt="Páxina 31" class="image-background">
+  <p class="ft-emphasis">
+    Tamén<br/>
+    destacou<br/>
+    polo<br/>
+    seu<br/>
+    traballo<br/>
+    en<br/>
+    arqueoloxía,<br/>
+    polo<br/>
+    que<br/>
+    foi<br/>
+    nomeado<br/>
+    Arqueólogo<br/>
+    Oficial<br/>
+    da<br/>
+    provincia<br/>
+    da<br/>
+    Coruña.<br/>
+    Fixo<br/>
+    importantes<br/>
+    descubrimentos<br/>
+    e<br/>
+    achegas<br/>
+    ao<br/>
+    coñecemento<br/>
+    do<br/>
+    pasado<br/>
+    de<br/>
+    Galicia.
+  </p>
+</div>
+
+<!-- Páxina 32 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio032.png" alt="Páxina 32" class="image-background">
+  <p class="ft-emphasis">
+    En<br/>
+    canto<br/>
+    á<br/>
+    etnografía,<br/>
+    Florencio<br/>
+    Vaamonde<br/>
+    Lores<br/>
+    realizou<br/>
+    estudos<br/>
+    profundos<br/>
+    sobre<br/>
+    as<br/>
+    manifestacións<br/>
+    culturais<br/>
+    do<br/>
+    pobo<br/>
+    galego,<br/>
+    recollendo<br/>
+    información<br/>
+    sobre<br/>
+    as<br/>
+    súas<br/>
+    tradicións,<br/>
+    crencias,<br/>
+    xogos,<br/>
+    danzas,<br/>
+    cancións,<br/>
+    etc.
+  </p>
+</div>
+
+<!-- Páxina 33 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio033.png" alt="Páxina 33" class="image-background">
+  <p class="ft-emphasis">
+    Outro<br/>
+    campo<br/>
+    no<br/>
+    que<br/>
+    destacou<br/>
+    foi<br/>
+    a<br/>
+    xeografía,<br/>
+    tanto<br/>
+    físico<br/>
+    como<br/>
+    humano.<br/>
+    Realizou<br/>
+    importantes<br/>
+    estudos<br/>
+    sobre<br/>
+    a<br/>
+    configuración<br/>
+    do<br/>
+    territorio<br/>
+    galego<br/>
+    e<br/>
+    sobre<br/>
+    a<br/>
+    distribución<br/>
+    da<br/>
+    poboación.
+  </p>
+</div>
+
+<!-- Páxina 34 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio034.png" alt="Páxina 34" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    actividade<br/>
+    cultural<br/>
+    non<br/>
+    se<br/>
+    esgotou<br/>
+    nos<br/>
+    campos<br/>
+    académicos.<br/>
+    Florencio<br/>
+    Vaamonde<br/>
+    Lores<br/>
+    participou<br/>
+    activamente<br/>
+    na<br/>
+    vida<br/>
+    pública<br/>
+    e<br/>
+    política<br/>
+    da<br/>
+    súa<br/>
+    época,<br/>
+    defendendo<br/>
+    os<br/>
+    intereses<br/>
+    de<br/>
+    Galicia<br/>
+    e<br/>
+    promovendo<br/>
+    o<br/>
+    seu<br/>
+    desenvolvemento.
+  </p>
+</div>
+
+<!-- Páxina 35 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio035.png" alt="Páxina 35" class="image-background">
+  <p class="ft-emphasis">
+    Foi<br/>
+    membro<br/>
+    de<br/>
+    diversas<br/>
+    asociacións<br/>
+    culturais<br/>
+    e<br/>
+    científicas,<br/>
+    tanto<br/>
+    galegas<br/>
+    como<br/>
+    de<br/>
+    ámbito<br/>
+    estatal<br/>
+    e<br/>
+    internacional.<br/>
+    A<br/>
+    súa<br/>
+    figura<br/>
+    gozaba<br/>
+    de<br/>
+    recoñecemento<br/>
+    máis<br/>
+    aló<br/>
+    das<br/>
+    fronteiras<br/>
+    galegas<br/>
+    e<br/>
+    españolas.
+  </p>
+</div>
+
+<!-- Páxina 36 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio036.png" alt="Páxina 36" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    biblioteca<br/>
+    particular<br/>
+    era<br/>
+    unha<br/>
+    das<br/>
+    máis<br/>
+    completas<br/>
+    e<br/>
+    valiosas<br/>
+    de<br/>
+    Galicia.<br/>
+    Contiña<br/>
+    miles<br/>
+    de<br/>
+    volumes<br/>
+    sobre<br/>
+    múltiples<br/>
+    materias,<br/>
+    incluíndo<br/>
+    numerosas<br/>
+    obras<br/>
+    antigas<br/>
+    e<br/>
+    valiosas.
+  </p>
+</div>
+
+<!-- Páxina 37 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio037.png" alt="Páxina 37" class="image-background">
+  <p class="ft-emphasis">
+    Moitos<br/>
+    investigadores<br/>
+    e<br/>
+    estudiosos<br/>
+    tiveron<br/>
+    acceso<br/>
+    a<br/>
+    esa<br/>
+    biblioteca<br/>
+    para<br/>
+    realizar<br/>
+    os<br/>
+    seus<br/>
+    traballos.<br/>
+    Florencio<br/>
+    Vaamonde<br/>
+    Lores<br/>
+    comparteunos<br/>
+    coñecementos<br/>
+    e<br/>
+    facilitábales<br/>
+    os<br/>
+    recursos<br/>
+    necesarios<br/>
+    para<br/>
+    avanzar<br/>
+    nas<br/>
+    súas<br/>
+    investigacións.
+  </p>
+</div>
+
+<!-- Páxina 38 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio038.png" alt="Páxina 38" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    casa<br/>
+    da<br/>
+    Coruña<br/>
+    converteuse<br/>
+    nun<br/>
+    punto<br/>
+    de<br/>
+    referencia<br/>
+    para<br/>
+    os<br/>
+    intelectuais<br/>
+    galegos.<br/>
+    Alí<br/>
+    se<br/>
+    celebraban<br/>
+    tertulias<br/>
+    culturais<br/>
+    e<br/>
+    se<br/>
+    xeraban<br/>
+    proxectos<br/>
+    que<br/>
+    contribuíron<br/>
+    ao<br/>
+    desenvolvemento<br/>
+    cultural<br/>
+    de<br/>
+    Galicia.
+  </p>
+</div>
+
+<!-- Páxina 39 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio039.png" alt="Páxina 39" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    dedicación<br/>
+    á<br/>
+    docencia<br/>
+    e<br/>
+    á<br/>
+    divulgación<br/>
+    cultural<br/>
+    foi<br/>
+    tamén<br/>
+    notable.<br/>
+    Deu<br/>
+    conferencias,<br/>
+    participou<br/>
+    en<br/>
+    actos<br/>
+    públicos<br/>
+    e<br/>
+    escribiu<br/>
+    numerosos<br/>
+    artigos<br/>
+    dirixidos<br/>
+    á<br/>
+    sociedade<br/>
+    en<br/>
+    xeral.
+  </p>
+</div>
+
+<!-- Páxina 40 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio040.png" alt="Páxina 40" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    está<br/>
+    espallada<br/>
+    por<br/>
+    múltiples<br/>
+    publicacións,<br/>
+    libros,<br/>
+    revistas<br/>
+    e<br/>
+    periódicos.<br/>
+    Moitos<br/>
+    dos<br/>
+    seus<br/>
+    escritos<br/>
+    aínda<br/>
+    teñen<br/>
+    valor<br/>
+    para<br/>
+    os<br/>
+    estudiosos<br/>
+    actuais.
+  </p>
+</div>
+
+<!-- Páxina 41 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio041.png" alt="Páxina 41" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    influencia<br/>
+    sobre<br/>
+    a<br/>
+    xeración<br/>
+    posterior<br/>
+    foi<br/>
+    moi<br/>
+    importante.<br/>
+    Múltiples<br/>
+    persoas<br/>
+    tiveron<br/>
+    nel<br/>
+    un<br/>
+    referente<br/>
+    e<br/>
+    inspiración<br/>
+    para<br/>
+    desenvolver<br/>
+    a<br/>
+    súa<br/>
+    propia<br/>
+    actividade<br/>
+    cultural<br/>
+    e<br/>
+    científica.
+  </p>
+</div>
+
+<!-- Páxina 42 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio042.png" alt="Páxina 42" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    morte,<br/>
+    o<br/>
+    19<br/>
+    de<br/>
+    outubro<br/>
+    de<br/>
+    1925,<br/>
+    supuxo<br/>
+    un<br/>
+   haço<br/>
+    importante<br/>
+    para<br/>
+    a<br/>
+    cultura<br/>
+    galega.<br/>
+    A<br/>
+    súa<br/>
+    perda<br/>
+    foi<br/>
+    sentida<br/>
+    por<br/>
+    toda<br/>
+    a<br/>
+    comunidade<br/>
+    intelectual<br/>
+    galega<br/>
+    e<br/>
+    española.
+  </p>
+</div>
+
+<!-- Páxina 43 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio043.png" alt="Páxina 43" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    foi<br/>
+    obxecto<br/>
+    de<br/>
+    homenaxes<br/>
+    e<br/>
+    recoñecementos<br/>
+    tanto<br/>
+    durante<br/>
+    a<br/>
+    súa<br/>
+    vida<br/>
+    como<br/>
+    após<br/>
+    a<br/>
+    súa<br/>
+    morte.<br/>
+    Numerosos<br/>
+    actos<br/>
+    e<br/>
+    publicacións<br/>
+    recordaron<br/>
+    a<br/>
+    súa<br/>
+    figura<br/>
+    e<br/>
+    a<br/>
+    súa<br/>
+    obra.
+  </p>
+</div>
+
+<!-- Páxina 44 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio044.png" alt="Páxina 44" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    casa<br/>
+    natal,<br/>
+    no<br/>
+    Outeiro<br/>
+    de<br/>
+    Ouces,<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    protección<br/>
+    e<br/>
+    conservación<br/>
+    por<br/>
+    parte<br/>
+    das<br/>
+    administracións<br/>
+    competentes<br/>
+    por<br/>
+    considerala<br/>
+    un<br/>
+    elemento<br/>
+    de<br/>
+    interese<br/>
+    histórico<br/>
+    e<br/>
+    cultural.
+  </p>
+</div>
+
+<!-- Páxina 45 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio045.png" alt="Páxina 45" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    biblioteca<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    protección<br/>
+    e<br/>
+    conservación.<br/>
+    Parte<br/>
+    dela<br/>
+    está<br/>
+    depositada<br/>
+    en<br/>
+    institucións<br/>
+    culturais<br/>
+    para<br/>
+    que<br/>
+    sexa<br/>
+    accesible<br/>
+    aos<br/>
+    investigadores<br/>
+    e<br/>
+    estudiosos.
+  </p>
+</div>
+
+<!-- Páxina 46 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio046.png" alt="Páxina 46" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    seguiu<br/>
+    sendo<br/>
+    motivo<br/>
+    de<br/>
+    estudo<br/>
+    e<br/>
+    análise<br/>
+    por<br/>
+    parte<br/>
+    de<br/>
+    historiadores,<br/>
+    lingüistas,<br/>
+    filólogos<br/>
+    e<br/>
+    outros<br/>
+    especialistas.<br/>
+    A<br/>
+    súa<br/>
+    obra<br/>
+    continúa<br/>
+    tendo<br/>
+    actualidade<br/>
+    e<br/>
+    interese<br/>
+    para<br/>
+    os<br/>
+    estudiosos<br/>
+    actuais.
+  </p>
+</div>
+
+<!-- Páxina 47 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio047.png" alt="Páxina 47" class="image-background">
+  <p class="ft-emphasis">
+    As<br/>
+    súas<br/>
+    achegas<br/>
+    á<br/>
+    lingua<br/>
+    galega<br/>
+    foron<br/>
+    fundamentais<br/>
+    para<br/>
+    a<br/>
+    súa<br/>
+    normalización<br/>
+    e<br/>
+    desenvolvemento.<br/>
+    Os<br/>
+    seus<br/>
+    traballos<br/>
+    foron<br/>
+    un<br/>
+    punto<br/>
+    de<br/>
+    referencia<br/>
+    para<br/>
+    os<br/>
+    posteriores<br/>
+    avances<br/>
+    na<br/>
+    codificación<br/>
+    e<br/>
+    normativa<br/>
+    da<br/>
+    lingua<br/>
+    galega.
+  </p>
+</div>
+
+<!-- Páxina 48 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio048.png" alt="Páxina 48" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    labor<br/>
+    como<br/>
+    editor<br/>
+    e<br/>
+    estudioso<br/>
+    da<br/>
+    literatura<br/>
+    galega<br/>
+    antiga<br/>
+    e<br/>
+    tradicional<br/>
+    foi<br/>
+    tamén<br/>
+    moi<br/>
+    importante.<br/>
+    Permitiu<br/>
+    a<br/>
+    recuperación<br/>
+    e<br/>
+    conservación<br/>
+    de<br/>
+    numerosas<br/>
+    obras<br/>
+    que,<br/>
+    doutro<br/>
+    xeito,<br/>
+    poderían<br/>
+    terse<br/>
+    perdido.
+  </p>
+</div>
+
+<!-- Páxina 49 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio049.png" alt="Páxina 49" class="image-background">
+  <p class="ft-emphasis">
+    O<br/>
+    seu<br/>
+    exemplo<br/>
+    de<br/>
+    traballo<br/>
+    e<br/>
+    dedicación<br/>
+    á<br/>
+    cultura<br/>
+    galega<br/>
+    inspirou<br/>
+    a<br/>
+    moitas<br/>
+    xeracións<br/>
+    posteriores.<br/>
+    A<br/>
+    súa<br/>
+    figura<br/>
+    continúa<br/>
+    sendo<br/>
+    un<br/>
+    referente<br/>
+    para<br/>
+    os<br/>
+    que<br/>
+    se<br/>
+    dedican<br/>
+    ao<br/>
+    estudo<br/>
+    e<br/>
+    á<br/>
+    defensa<br/>
+    da<br/>
+    cultura<br/>
+    galega.
+  </p>
+</div>
+
+<!-- Páxina 50 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio050.png" alt="Páxina 50" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    visión<br/>
+    integral<br/>
+    da<br/>
+    cultura<br/>
+    galega,<br/>
+    que<br/>
+    abarcaba<br/>
+    dende<br/>
+    a<br/>
+    lingua<br/>
+    ata<br/>
+    a<br/>
+    historia,<br/>
+    pasando<br/>
+    pola<br/>
+    literatura,<br/>
+    a<br/>
+    arqueoloxía,<br/>
+    a<br/>
+    etnografía<br/>
+    e<br/>
+    outros<br/>
+    campos,<br/>
+    foi<br/>
+    moi<br/>
+    enriquecedora<br/>
+    para<br/>
+    o<br/>
+    desenvolvemento<br/>
+    cultural<br/>
+    de<br/>
+    Galicia.
+  </p>
+</div>
+
+<!-- Páxina 51 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio051.png" alt="Páxina 51" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    capacidade<br/>
+    para<br/>
+    integrar<br/>
+    coñecementos<br/>
+    de<br/>
+    diferentes<br/>
+    ámbitos<br/>
+    e<br/>
+    disciplinas<br/>
+    foi<br/>
+    unha<br/>
+    das<br/>
+    súas<br/>
+    principais<br/>
+    virtudes<br/>
+    e<br/>
+    contribuíu<br/>
+    de<br/>
+    maneira<br/>
+    decisiva<br/>
+    ao<br/>
+    enriquecemento<br/>
+    da<br/>
+    cultura<br/>
+    galega.
+  </p>
+</div>
+
+<!-- Páxina 52 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio052.png" alt="Páxina 52" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    seguiu<br/>
+    estando<br/>
+    presente<br/>
+    nos<br/>
+    debates<br/>
+    sobre<br/>
+    a<br/>
+    lingua<br/>
+    e<br/>
+    a<br/>
+    literatura<br/>
+    galegas.<br/>
+    As<br/>
+    súas<br/>
+    ideas<br/>
+    e<br/>
+    achegas<br/>
+    foron<br/>
+    obxecto<br/>
+    de<br/>
+    recuperación<br/>
+    e<br/>
+    análise<br/>
+    polos<br/>
+    estudiosos<br/>
+    posteriores.
+  </p>
+</div>
+
+<!-- Páxina 53 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio053.png" alt="Páxina 53" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    seguiu<br/>
+    sendo<br/>
+    citada<br/>
+    e<br/>
+    utilizada<br/>
+    como<br/>
+    referencia<br/>
+    polos<br/>
+    estudiosos<br/>
+    da<br/>
+    lingua<br/>
+    e<br/>
+    da<br/>
+    literatura<br/>
+    galegas.<br/>
+    A<br/>
+    súa<br/>
+    autoridade<br/>
+    intelectual<br/>
+    foi<br/>
+    recoñecida<br/>
+    polos<br/>
+    seus<br/>
+    sucesores.
+  </p>
+</div>
+
+<!-- Páxina 54 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio054.png" alt="Páxina 54" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    inspirou<br/>
+    tamén<br/>
+    a<br/>
+    acción<br/>
+    cultural<br/>
+    de<br/>
+    outras<br/>
+    persoas<br/>
+    e<br/>
+    institucións.<br/>
+    O<br/>
+    seu<br/>
+    exemplo<br/>
+    de<br/>
+    compromiso<br/>
+    coa<br/>
+    cultura<br/>
+    galega<br/>
+    serviu<br/>
+    de<br/>
+    estímulo<br/>
+    para<br/>
+    outras<br/>
+    xeracións.
+  </p>
+</div>
+
+<!-- Páxina 55 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio055.png" alt="Páxina 55" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    influencia<br/>
+    estendeuse<br/>
+    máis<br/>
+    aló<br/>
+    das<br/>
+    fronteiras<br/>
+    galegas.<br/>
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    recoñecida<br/>
+    e<br/>
+    valorada<br/>
+    por<br/>
+    estudiosos<br/>
+    de<br/>
+    outras<br/>
+    linguas<br/>
+    e<br/>
+    culturas,<br/>
+    o<br/>
+    que<br/>
+    axudou<br/>
+    a<br/>
+    dar<br/>
+    coñecemento<br/>
+    á<br/>
+    cultura<br/>
+    galega<br/>
+    fóra<br/>
+    de<br/>
+    Galicia.
+  </p>
+</div>
+
+<!-- Páxina 56 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio056.png" alt="Páxina 56" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    estudos<br/>
+    biográficos<br/>
+    que<br/>
+    profundaron<br/>
+    no<br/>
+    coñecemento<br/>
+    da<br/>
+    súa<br/>
+    vida<br/>
+    e<br/>
+    da<br/>
+    súa<br/>
+    actividade.<br/>
+    Estes<br/>
+    estudos<br/>
+    axudaron<br/>
+    a<br/>
+    valorar<br/>
+    a<br/>
+    súa<br/>
+    figura<br/>
+    e<br/>
+    a<br/>
+    súa<br/>
+    traxectoria<br/>
+    intelectual.
+  </p>
+</div>
+
+<!-- Páxina 57 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio057.png" alt="Páxina 57" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    seguiu<br/>
+    sendo<br/>
+    reeditada<br/>
+    e<br/>
+    divulgada.<br/>
+    As<br/>
+    súas<br/>
+    achegas<br/>
+    foron<br/>
+    rescatación<br/>
+    e<br/>
+    postas<br/>
+    á<br/>
+    disposición<br/>
+    dos<br/>
+    lectores<br/>
+    e<br/>
+    estudiosos<br/>
+    modernos.
+  </p>
+</div>
+
+<!-- Páxina 58 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio058.png" alt="Páxina 58" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    inspirou<br/>
+    tamén<br/>
+    iniciativas<br/>
+    culturais<br/>
+    diversas.<br/>
+    Exposicións,<br/>
+    xornadas,<br/>
+    congresos<br/>
+    e<br/>
+    outros<br/>
+    eventos<br/>
+    foron<br/>
+    dedicados<br/>
+    ao<br/>
+    estudo<br/>
+    e<br/>
+    divulgación<br/>
+    da<br/>
+    súa<br/>
+    obra<br/>
+    e<br/>
+    da<br/>
+    súa<br/>
+    figura.
+  </p>
+</div>
+
+<!-- Páxina 59 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio059.png" alt="Páxina 59" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    casa<br/>
+    natal<br/>
+    converteuse<br/>
+    nun<br/>
+    espazo<br/>
+    de<br/>
+    memoria<br/>
+    cultural.<br/>
+    Serve<br/>
+    para<br/>
+    recordar<br/>
+    a<br/>
+    súa<br/>
+    figura<br/>
+    e<br/>
+    para<br/>
+    homenaxear<br/>
+    a<br/>
+    súa<br/>
+    figura<br/>
+    e<br/>
+    a<br/>
+    súa<br/>
+    obra.
+  </p>
+</div>
+
+<!-- Páxina 60 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio060.png" alt="Páxina 60" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    estudos<br/>
+    monográficos<br/>
+    que<br/>
+    analizaron<br/>
+    diferentes<br/>
+    aspectos<br/>
+    da<br/>
+    súa<br/>
+    obra<br/>
+    e<br/>
+    da<br/>
+    súa<br/>
+    traxectoria.<br/>
+    Estes<br/>
+    estudos<br/>
+    axudaron<br/>
+    a<br/>
+    perfilar<br/>
+    mellor<br/>
+    a<br/>
+    súa<br/>
+    figura<br/>
+    e<br/>
+    a<br/>
+    súa<br/>
+    importancia<br/>
+    histórica.
+  </p>
+</div>
+
+<!-- Páxina 61 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio061.png" alt="Páxina 61" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    edicións<br/>
+    críticas<br/>
+    que<br/>
+    permitiron<br/>
+    un<br/>
+    coñecemento<br/>
+    máis<br/>
+    rigoroso<br/>
+    e<br/>
+    profundo<br/>
+    da<br/>
+    súa<br/>
+    produción<br/>
+    intelectual.<br/>
+    Estas<br/>
+    edicións<br/>
+    foron<br/>
+    moi<br/>
+    valiosas<br/>
+    para<br/>
+    os<br/>
+    estudiosos<br/>
+    da<br/>
+    cultura<br/>
+    galega.
+  </p>
+</div>
+
+<!-- Páxina 62 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio062.png" alt="Páxina 62" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    seguiu<br/>
+    estando<br/>
+    presente<br/>
+    nos<br/>
+    debates<br/>
+    sobre<br/>
+    a<br/>
+    identidade<br/>
+    galega<br/>
+    e<br/>
+    sobre<br/>
+    o<br/>
+    papel<br/>
+    da<br/>
+    cultura<br/>
+    na<br/>
+    conformación<br/>
+    desta<br/>
+    identidade.<br/>
+    O<br/>
+    seu<br/>
+    exemplo<br/>
+    de<br/>
+    defensa<br/>
+    da<br/>
+    cultura<br/>
+    galega<br/>
+    foi<br/>
+    moi<br/>
+    enriquecedor.
+  </p>
+</div>
+
+<!-- Páxina 63 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio063.png" alt="Páxina 63" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    estudos<br/>
+    comparados<br/>
+    con<br/>
+    outras<br/>
+    figuras<br/>
+    intelectuais<br/>
+    galegas<br/>
+    e<br/>
+    españoas.<br/>
+    Estes<br/>
+    estudos<br/>
+    axudaron<br/>
+    a<br/>
+    situar<br/>
+    a<br/>
+    súa<br/>
+    figura<br/>
+    no<br/>
+    contexto<br/>
+    máis<br/>
+    amplo<br/>
+    da<br/>
+    cultura<br/>
+    do<br/>
+    seu<br/>
+    tempo.
+  </p>
+</div>
+
+<!-- Páxina 64 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio064.png" alt="Páxina 64" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    inspirou<br/>
+    tamén<br/>
+    a<br/>
+    novas<br/>
+    xeracións<br/>
+    de<br/>
+    estudiosos<br/>
+    e<br/>
+    intelectuais<br/>
+    galegos.<br/>
+    O<br/>
+    seu<br/>
+    exemplo<br/>
+    de<br/>
+    dedicación<br/>
+    á<br/>
+    cultura<br/>
+    e<br/>
+    á<br/>
+    defensa<br/>
+    da<br/>
+    mesma<br/>
+    foi<br/>
+    moi<br/>
+    estimulante.
+  </p>
+</div>
+
+<!-- Páxina 65 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio065.png" alt="Páxina 65" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    análise<br/>
+    desde<br/>
+    puntos<br/>
+    de<br/>
+    vista<br/>
+    novos<br/>
+    e<br/>
+    renovados.<br/>
+    A<br/>
+    súa<br/>
+    figura<br/>
+    foi<br/>
+    reinterpretada<br/>
+    en<br/>
+    función<br/>
+    das<br/>
+    novas<br/>
+    correntes<br/>
+    de<br/>
+    pensamento<br/>
+    e<br/>
+    dos<br/>
+    novos<br/>
+    enfoques<br/>
+    metodolóxicos.
+  </p>
+</div>
+
+<!-- Páxina 66 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio066.png" alt="Páxina 66" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    seguiu<br/>
+    sendo<br/>
+    obxecto<br/>
+    de<br/>
+    homenaxes<br/>
+    e<br/>
+    recoñecementos.<br/>
+    A<br/>
+    súa<br/>
+    memoria<br/>
+    foi<br/>
+    honrada<br/>
+    en<br/>
+    múltiples<br/>
+    ocasións<br/>
+    polas<br/>
+    institucións<br/>
+    culturais<br/>
+    e<br/>
+    educativas.
+  </p>
+</div>
+
+<!-- Páxina 67 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio067.png" alt="Páxina 67" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    achegas<br/>
+    e<br/>
+    análise<br/>
+    por<br/>
+    parte<br/>
+    de<br/>
+    estudiosos<br/>
+    internacionais.<br/>
+    A<br/>
+    súa<br/>
+    figura<br/>
+    foi<br/>
+    recoñecida<br/>
+    máis<br/>
+    aló<br/>
+    das<br/>
+    fronteiras<br/>
+    galegas<br/>
+    e<br/>
+    españolas.
+  </p>
+</div>
+
+<!-- Páxina 68 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio068.png" alt="Páxina 68" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    inspirou<br/>
+    tamén<br/>
+    proxectos<br/>
+    culturais<br/>
+    e<br/>
+    educativos<br/>
+    diversos.<br/>
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    utilizada<br/>
+    como<br/>
+    base<br/>
+    para<br/>
+    a<br/>
+    elaboración<br/>
+    de<br/>
+    materiais<br/>
+    didácticos<br/>
+    e<br/>
+    para<br/>
+    a<br/>
+    realización<br/>
+    de<br/>
+    actividades<br/>
+    culturais.
+  </p>
+</div>
+
+<!-- Páxina 69 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio069.png" alt="Páxina 69" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    estudos<br/>
+    interdisciplinares<br/>
+    que<br/>
+    analizaron<br/>
+    a<br/>
+    súa<br/>
+    obra<br/>
+    desde<br/>
+    diferentes<br/>
+    ángulos<br/>
+    e<br/>
+    perspectivas.<br/>
+    Estes<br/>
+    estudos<br/>
+    axudaron<br/>
+    a<br/>
+    enriquecer<br/>
+    o<br/>
+    coñecemento<br/>
+    da<br/>
+    súa<br/>
+    figura<br/>
+    e<br/>
+    da<br/>
+    súa<br/>
+    obra.
+  </p>
+</div>
+
+<!-- Páxina 70 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio070.png" alt="Páxina 70" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    estudos<br/>
+    de<br/>
+    recepción<br/>
+    que<br/>
+    analizaron<br/>
+    a<br/>
+    súa<br/>
+    influencia<br/>
+    e<br/>
+    presenza<br/>
+    na<br/>
+    cultura<br/>
+    posterior.<br/>
+    A<br/>
+    súa<br/>
+    figura<br/>
+    seguiu<br/>
+    estando<br/>
+    viva<br/>
+    na<br/>
+    memoria<br/>
+    cultural.
+  </p>
+</div>
+
+<!-- Páxina 71 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio071.png" alt="Páxina 71" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    inspirou<br/>
+    tamén<br/>
+    a<br/>
+    novas<br/>
+    xeracións<br/>
+    de<br/>
+    creadores<br/>
+    e<br/>
+    artistas.<br/>
+    O<br/>
+    seu<br/>
+    exemplo<br/>
+    de<br/>
+    compromiso<br/>
+    coa<br/>
+    cultura<br/>
+    e<br/>
+    coa<br/>
+    terra<br/>
+    foi<br/>
+    moi<br/>
+    estimulante<br/>
+    e<br/>
+    enriquecedor.
+  </p>
+</div>
+
+<!-- Páxina 72 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio072.png" alt="Páxina 72" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    obra<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    estudos<br/>
+    de<br/>
+    impacto<br/>
+    que<br/>
+    analizaron<br/>
+    a<br/>
+    súa<br/>
+    influencia<br/>
+    en<br/>
+    diferentes<br/>
+    ámbitos<br/>
+    da<br/>
+    cultura<br/>
+    galega.<br/>
+    A<br/>
+    súa<br/>
+    figura<br/>
+    seguiu<br/>
+    estando<br/>
+    presente<br/>
+    nos<br/>
+    debates<br/>
+    culturais.
+  </p>
+</div>
+
+<!-- Páxina 73 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio073.png" alt="Páxina 73" class="image-background">
+  <p class="ft-emphasis">
+    A<br/>
+    súa<br/>
+    figura<br/>
+    foi<br/>
+    tamén<br/>
+    obxecto<br/>
+    de<br/>
+    estudos<br/>
+    de<br/>
+    actualidade<br/>
+    que<br/>
+    analizaron<br/>
+    a<br/>
+    súa<br/>
+    permanencia<br/>
+    e<br/>
+    actualidade<br/>
+    na<br/>
+    cultura<br/>
+    contemporánea.<br/>
+    A<br/>
+    súa<br/>
+    obra<br/>
+    seguiu<br/>
+    sendo<br/>
+    fonte<br/>
+    de<br/>
+    inspiración<br/>
+    e<br/>
+    referencia.
+  </p>
+</div>
+
+<!-- Páxina 74 -->
+
+<div class="page-container">
+  <img src="optimized_images/florencio074.png" alt="Páxina 74" class="image-background">
+  <p class="ft-title ft-bold" style="font-size: clamp(2rem, 8vw, 4rem);">Homenaxe<br/>a<br/>Florencio<br/>Vaamonde<br/>Lores</p>
+</div>
+
+</body>
+</html>
